@@ -1,0 +1,25 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 50
+
+    ackermann_controller:
+      type: ackermann_steering_controller/AckermannSteeringController
+
+ackermann_controller:
+  ros__parameters:
+    # These must match your export_command_interfaces names
+    rear_wheel_names: [rear_wheel_joint]
+    front_steer_names: [front_steer_joint]
+
+    # DeepRacer Dimensions (meters)
+    wheelbase: 0.165
+    wheel_radius: 0.03
+    wheel_separation: 0.15
+
+    # Limits
+    steer_pos_max: 0.523 # ~30 degrees in radians
+    
+    # Odometry
+    publish_rate: 50.0
+    odom_frame_id: odom
+    base_frame_id: base_link

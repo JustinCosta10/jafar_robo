@@ -1,0 +1,4 @@
+source;share/ack_control/local_setup.bash
+source;share/ack_control/local_setup.dsv
+source;share/ack_control/local_setup.sh
+source;share/ack_control/local_setup.zsh

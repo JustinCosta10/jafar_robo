@@ -1,0 +1,75 @@
+[0.089s] Invoking command in '/home/pi/ros2_ws/src/build/ack_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/pi/ros2_ws/src/ack_control -DCMAKE_INSTALL_PREFIX=/home/pi/ros2_ws/src/install/ack_control
+[0.400s] -- The C compiler identification is GNU 11.4.0
+[0.724s] -- The CXX compiler identification is GNU 11.4.0
+[0.755s] -- Detecting C compiler ABI info
+[1.124s] -- Detecting C compiler ABI info - done
+[1.147s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.148s] -- Detecting C compile features
+[1.150s] -- Detecting C compile features - done
+[1.162s] -- Detecting CXX compiler ABI info
+[1.582s] -- Detecting CXX compiler ABI info - done
+[1.609s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.611s] -- Detecting CXX compile features
+[1.613s] -- Detecting CXX compile features - done
+[1.646s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.640s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[3.428s] -- Found hardware_interface: 2.53.0 (/opt/ros/humble/share/hardware_interface/cmake)
+[3.849s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[3.908s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.982s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[4.072s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.199s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.813s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[5.847s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[6.059s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[6.302s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[6.321s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[6.408s] -- Found FastRTPS: /opt/ros/humble/include  
+[6.425s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[6.460s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[6.499s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[6.603s] -- Looking for pthread.h
+[6.992s] -- Looking for pthread.h - found
+[6.994s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[7.371s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[7.376s] -- Found Threads: TRUE  
+[8.083s] -- Configuring done
+[8.173s] -- Generating done
+[8.199s] -- Build files have been written to: /home/pi/ros2_ws/src/build/ack_control
+[8.298s] Invoked command in '/home/pi/ros2_ws/src/build/ack_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/pi/ros2_ws/src/ack_control -DCMAKE_INSTALL_PREFIX=/home/pi/ros2_ws/src/install/ack_control
+[8.307s] Invoking command in '/home/pi/ros2_ws/src/build/ack_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/pi/ros2_ws/src/build/ack_control -- -j4 -l4
+[8.533s] [ 50%] [32mBuilding CXX object CMakeFiles/ack_control.dir/src/ack_hardware.cpp.o[0m
+[15.641s] [100%] [32m[1mLinking CXX shared library liback_control.so[0m
+[16.394s] [100%] Built target ack_control
+[16.443s] Invoked command in '/home/pi/ros2_ws/src/build/ack_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/pi/ros2_ws/src/build/ack_control -- -j4 -l4
+[16.452s] Invoking command in '/home/pi/ros2_ws/src/build/ack_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/pi/ros2_ws/src/build/ack_control
+[16.483s] -- Install configuration: ""
+[16.483s] -- Installing: /home/pi/ros2_ws/src/install/ack_control/share/ack_control/ack_control.xml
+[16.485s] -- Installing: /home/pi/ros2_ws/src/install/ack_control/lib/liback_control.so
+[16.492s] -- Set runtime path of "/home/pi/ros2_ws/src/install/ack_control/lib/liback_control.so" to ""
+[16.493s] -- Installing: /home/pi/ros2_ws/src/install/ack_control/share/ack_control/config
+[16.494s] -- Installing: /home/pi/ros2_ws/src/install/ack_control/share/ack_control/config/ack_controllers.yaml
+[16.495s] -- Installing: /home/pi/ros2_ws/src/install/ack_control/share/ack_control/description
+[16.495s] -- Installing: /home/pi/ros2_ws/src/install/ack_control/share/ack_control/description/deep.urdf.xacro
+[16.496s] -- Installing: /home/pi/ros2_ws/src/install/ack_control/share/ack_control/launch
+[16.497s] -- Installing: /home/pi/ros2_ws/src/install/ack_control/share/ack_control/launch/bringup.launch.py
+[16.498s] -- Installing: /home/pi/ros2_ws/src/install/ack_control/include
+[16.499s] -- Installing: /home/pi/ros2_ws/src/install/ack_control/include/ack_control
+[16.499s] -- Installing: /home/pi/ros2_ws/src/install/ack_control/include/ack_control/ack_hardware.hpp
+[16.501s] -- Installing: /home/pi/ros2_ws/src/install/ack_control/share/ament_index/resource_index/package_run_dependencies/ack_control
+[16.503s] -- Installing: /home/pi/ros2_ws/src/install/ack_control/share/ament_index/resource_index/parent_prefix_path/ack_control
+[16.506s] -- Installing: /home/pi/ros2_ws/src/install/ack_control/share/ack_control/environment/ament_prefix_path.sh
+[16.507s] -- Installing: /home/pi/ros2_ws/src/install/ack_control/share/ack_control/environment/ament_prefix_path.dsv
+[16.509s] -- Installing: /home/pi/ros2_ws/src/install/ack_control/share/ack_control/environment/path.sh
+[16.510s] -- Installing: /home/pi/ros2_ws/src/install/ack_control/share/ack_control/environment/path.dsv
+[16.514s] -- Installing: /home/pi/ros2_ws/src/install/ack_control/share/ack_control/local_setup.bash
+[16.516s] -- Installing: /home/pi/ros2_ws/src/install/ack_control/share/ack_control/local_setup.sh
+[16.517s] -- Installing: /home/pi/ros2_ws/src/install/ack_control/share/ack_control/local_setup.zsh
+[16.518s] -- Installing: /home/pi/ros2_ws/src/install/ack_control/share/ack_control/local_setup.dsv
+[16.518s] -- Installing: /home/pi/ros2_ws/src/install/ack_control/share/ack_control/package.dsv
+[16.520s] -- Installing: /home/pi/ros2_ws/src/install/ack_control/share/ament_index/resource_index/packages/ack_control
+[16.522s] -- Installing: /home/pi/ros2_ws/src/install/ack_control/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/ack_control
+[16.524s] -- Installing: /home/pi/ros2_ws/src/install/ack_control/share/ack_control/cmake/ack_controlConfig.cmake
+[16.525s] -- Installing: /home/pi/ros2_ws/src/install/ack_control/share/ack_control/cmake/ack_controlConfig-version.cmake
+[16.526s] -- Installing: /home/pi/ros2_ws/src/install/ack_control/share/ack_control/package.xml
+[16.547s] Invoked command in '/home/pi/ros2_ws/src/build/ack_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/pi/ros2_ws/src/build/ack_control

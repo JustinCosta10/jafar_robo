@@ -1,0 +1,80 @@
+[0.106s] Invoking command in '/home/pi/ros2_ws/build/robo_rover': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/pi/ros2_ws/src/robo_rover -DCMAKE_INSTALL_PREFIX=/home/pi/ros2_ws/install/robo_rover
+[1.258s] -- The C compiler identification is GNU 11.4.0
+[2.226s] -- The CXX compiler identification is GNU 11.4.0
+[2.276s] -- Detecting C compiler ABI info
+[2.744s] -- Detecting C compiler ABI info - done
+[2.773s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.777s] -- Detecting C compile features
+[2.784s] -- Detecting C compile features - done
+[2.799s] -- Detecting CXX compiler ABI info
+[3.286s] -- Detecting CXX compiler ABI info - done
+[3.313s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.315s] -- Detecting CXX compile features
+[3.317s] -- Detecting CXX compile features - done
+[3.356s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[4.601s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[5.461s] -- Found rclpy: 3.3.19 (/opt/ros/humble/share/rclpy/cmake)
+[5.486s] -- Found std_msgs: 4.9.0 (/opt/ros/humble/share/std_msgs/cmake)
+[5.962s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[6.023s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[6.115s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[6.276s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.507s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.738s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[6.849s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[7.499s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[8.181s] -- Added test 'copyright' to check source files copyright and LICENSE
+[8.204s] -- Added test 'flake8' to check Python code syntax and style conventions
+[8.208s] -- Added test 'lint_cmake' to check CMake code style
+[8.211s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[8.222s] -- Added test 'xmllint' to check XML markup files
+[8.230s] -- Configuring done
+[8.272s] -- Generating done
+[8.286s] -- Build files have been written to: /home/pi/ros2_ws/build/robo_rover
+[8.307s] Invoked command in '/home/pi/ros2_ws/build/robo_rover' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/pi/ros2_ws/src/robo_rover -DCMAKE_INSTALL_PREFIX=/home/pi/ros2_ws/install/robo_rover
+[8.316s] Invoking command in '/home/pi/ros2_ws/build/robo_rover': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/pi/ros2_ws/build/robo_rover -- -j4 -l4
+[8.612s] Built target ament_cmake_python_copy_robo_rover
+[10.014s] running egg_info
+[10.017s] creating robo_rover.egg-info
+[10.018s] writing robo_rover.egg-info/PKG-INFO
+[10.019s] writing dependency_links to robo_rover.egg-info/dependency_links.txt
+[10.019s] writing top-level names to robo_rover.egg-info/top_level.txt
+[10.020s] writing manifest file 'robo_rover.egg-info/SOURCES.txt'
+[10.029s] reading manifest file 'robo_rover.egg-info/SOURCES.txt'
+[10.031s] writing manifest file 'robo_rover.egg-info/SOURCES.txt'
+[10.158s] Built target ament_cmake_python_build_robo_rover_egg
+[10.198s] Invoked command in '/home/pi/ros2_ws/build/robo_rover' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/pi/ros2_ws/build/robo_rover -- -j4 -l4
+[10.204s] Invoking command in '/home/pi/ros2_ws/build/robo_rover': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/pi/ros2_ws/build/robo_rover
+[10.236s] -- Install configuration: ""
+[10.237s] -- Installing: /home/pi/ros2_ws/install/robo_rover/share/robo_rover/environment/pythonpath.sh
+[10.238s] -- Installing: /home/pi/ros2_ws/install/robo_rover/share/robo_rover/environment/pythonpath.dsv
+[10.239s] -- Installing: /home/pi/ros2_ws/install/robo_rover/local/lib/python3.10/dist-packages/robo_rover-1.0.0-py3.10.egg-info
+[10.240s] -- Installing: /home/pi/ros2_ws/install/robo_rover/local/lib/python3.10/dist-packages/robo_rover-1.0.0-py3.10.egg-info/PKG-INFO
+[10.241s] -- Installing: /home/pi/ros2_ws/install/robo_rover/local/lib/python3.10/dist-packages/robo_rover-1.0.0-py3.10.egg-info/top_level.txt
+[10.243s] -- Installing: /home/pi/ros2_ws/install/robo_rover/local/lib/python3.10/dist-packages/robo_rover-1.0.0-py3.10.egg-info/dependency_links.txt
+[10.244s] -- Installing: /home/pi/ros2_ws/install/robo_rover/local/lib/python3.10/dist-packages/robo_rover-1.0.0-py3.10.egg-info/SOURCES.txt
+[10.246s] -- Installing: /home/pi/ros2_ws/install/robo_rover/local/lib/python3.10/dist-packages/robo_rover
+[10.246s] -- Installing: /home/pi/ros2_ws/install/robo_rover/local/lib/python3.10/dist-packages/robo_rover/__init__.py
+[10.247s] -- Installing: /home/pi/ros2_ws/install/robo_rover/local/lib/python3.10/dist-packages/robo_rover/rover_node.py
+[10.401s] Listing '/home/pi/ros2_ws/install/robo_rover/local/lib/python3.10/dist-packages/robo_rover'...
+[10.402s] Compiling '/home/pi/ros2_ws/install/robo_rover/local/lib/python3.10/dist-packages/robo_rover/__init__.py'...
+[10.403s] Compiling '/home/pi/ros2_ws/install/robo_rover/local/lib/python3.10/dist-packages/robo_rover/rover_node.py'...
+[10.426s] -- Installing: /home/pi/ros2_ws/install/robo_rover/lib/robo_rover/rover_node
+[10.427s] -- Installing: /home/pi/ros2_ws/install/robo_rover/share/robo_rover/launch
+[10.428s] -- Installing: /home/pi/ros2_ws/install/robo_rover/share/robo_rover/launch/rover_launch.py
+[10.430s] -- Installing: /home/pi/ros2_ws/install/robo_rover/share/ament_index/resource_index/package_run_dependencies/robo_rover
+[10.432s] -- Installing: /home/pi/ros2_ws/install/robo_rover/share/ament_index/resource_index/parent_prefix_path/robo_rover
+[10.434s] -- Installing: /home/pi/ros2_ws/install/robo_rover/share/robo_rover/environment/ament_prefix_path.sh
+[10.435s] -- Installing: /home/pi/ros2_ws/install/robo_rover/share/robo_rover/environment/ament_prefix_path.dsv
+[10.436s] -- Installing: /home/pi/ros2_ws/install/robo_rover/share/robo_rover/environment/path.sh
+[10.438s] -- Installing: /home/pi/ros2_ws/install/robo_rover/share/robo_rover/environment/path.dsv
+[10.439s] -- Installing: /home/pi/ros2_ws/install/robo_rover/share/robo_rover/local_setup.bash
+[10.440s] -- Installing: /home/pi/ros2_ws/install/robo_rover/share/robo_rover/local_setup.sh
+[10.442s] -- Installing: /home/pi/ros2_ws/install/robo_rover/share/robo_rover/local_setup.zsh
+[10.443s] -- Installing: /home/pi/ros2_ws/install/robo_rover/share/robo_rover/local_setup.dsv
+[10.444s] -- Installing: /home/pi/ros2_ws/install/robo_rover/share/robo_rover/package.dsv
+[10.446s] -- Installing: /home/pi/ros2_ws/install/robo_rover/share/ament_index/resource_index/packages/robo_rover
+[10.447s] -- Installing: /home/pi/ros2_ws/install/robo_rover/share/robo_rover/cmake/robo_roverConfig.cmake
+[10.448s] -- Installing: /home/pi/ros2_ws/install/robo_rover/share/robo_rover/cmake/robo_roverConfig-version.cmake
+[10.449s] -- Installing: /home/pi/ros2_ws/install/robo_rover/share/robo_rover/package.xml
+[10.457s] Invoked command in '/home/pi/ros2_ws/build/robo_rover' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/pi/ros2_ws/build/robo_rover

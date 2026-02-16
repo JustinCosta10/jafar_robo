@@ -1,0 +1,296 @@
+[0.000000] (-) TimerEvent: {}
+[0.001881] (ack_control) JobQueued: {'identifier': 'ack_control', 'dependencies': OrderedDict()}
+[0.002429] (ack_control) JobStarted: {'identifier': 'ack_control'}
+[0.057309] (ack_control) JobProgress: {'identifier': 'ack_control', 'progress': 'cmake'}
+[0.060423] (ack_control) Command: {'cmd': ['/usr/bin/cmake', '/home/pi/ros2_ws/src/ack_control', '-DCMAKE_INSTALL_PREFIX=/home/pi/ros2_ws/src/ack_control/install/ack_control'], 'cwd': '/home/pi/ros2_ws/src/ack_control/build/ack_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_CLIENT', '100.81.44.86 33912 22'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pi/ros2_ws/install/turtlesim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi/ros2_ws/src'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/pi/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/pi/.local/bin:/home/pi/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/nvim-linux-arm64/bin:/opt/nvim/'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/pi/ros2_ws/install/turtlesim:/home/pi/ros2_ws/install/robo_rover:/home/pi/ros2_ws/install/hardware:/home/pi/ros2_ws/install/description:/home/pi/ros2_ws/install/control:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/pi/ros2_ws/src/ack_control/build/ack_control'), ('LC_ALL', 'C.UTF-8'), ('SSH_CONNECTION', '100.81.44.86 33912 100.86.204.127 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pi/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages:/home/pi/ros2_ws/install/robo_rover/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/ros2_ws/install/turtlesim:/home/pi/ros2_ws/install/robo_rover:/home/pi/ros2_ws/install/hardware:/home/pi/ros2_ws/install/description:/home/pi/ros2_ws/install/control:/opt/ros/humble')]), 'shell': False}
+[0.099133] (-) TimerEvent: {}
+[0.200139] (-) TimerEvent: {}
+[0.301172] (-) TimerEvent: {}
+[0.402040] (-) TimerEvent: {}
+[0.502916] (-) TimerEvent: {}
+[0.603919] (-) TimerEvent: {}
+[0.705009] (-) TimerEvent: {}
+[0.805922] (-) TimerEvent: {}
+[0.907122] (-) TimerEvent: {}
+[1.008133] (-) TimerEvent: {}
+[1.109147] (-) TimerEvent: {}
+[1.199312] (ack_control) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.209313] (-) TimerEvent: {}
+[1.310229] (-) TimerEvent: {}
+[1.411273] (-) TimerEvent: {}
+[1.512306] (-) TimerEvent: {}
+[1.613314] (-) TimerEvent: {}
+[1.714549] (-) TimerEvent: {}
+[1.815623] (-) TimerEvent: {}
+[1.916596] (-) TimerEvent: {}
+[1.969533] (ack_control) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[2.013816] (ack_control) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.016756] (-) TimerEvent: {}
+[2.117609] (-) TimerEvent: {}
+[2.218349] (-) TimerEvent: {}
+[2.319105] (-) TimerEvent: {}
+[2.378447] (ack_control) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.404129] (ack_control) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.406350] (ack_control) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.409250] (ack_control) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.419267] (-) TimerEvent: {}
+[2.425347] (ack_control) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.519492] (-) TimerEvent: {}
+[2.620549] (-) TimerEvent: {}
+[2.721495] (-) TimerEvent: {}
+[2.796552] (ack_control) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.821650] (-) TimerEvent: {}
+[2.824119] (ack_control) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.825085] (ack_control) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.826983] (ack_control) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.876810] (ack_control) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.921823] (-) TimerEvent: {}
+[3.022480] (-) TimerEvent: {}
+[3.123224] (-) TimerEvent: {}
+[3.224138] (-) TimerEvent: {}
+[3.325935] (-) TimerEvent: {}
+[3.426723] (-) TimerEvent: {}
+[3.527429] (-) TimerEvent: {}
+[3.628428] (-) TimerEvent: {}
+[3.653953] (ack_control) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[3.728603] (-) TimerEvent: {}
+[3.829462] (-) TimerEvent: {}
+[3.930463] (-) TimerEvent: {}
+[4.031482] (-) TimerEvent: {}
+[4.132141] (-) TimerEvent: {}
+[4.232798] (-) TimerEvent: {}
+[4.333585] (-) TimerEvent: {}
+[4.388767] (ack_control) StdoutLine: {'line': b'-- Found hardware_interface: 2.53.0 (/opt/ros/humble/share/hardware_interface/cmake)\n'}
+[4.433740] (-) TimerEvent: {}
+[4.534400] (-) TimerEvent: {}
+[4.635130] (-) TimerEvent: {}
+[4.735812] (-) TimerEvent: {}
+[4.836575] (-) TimerEvent: {}
+[4.874789] (ack_control) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[4.936741] (-) TimerEvent: {}
+[4.942544] (ack_control) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[5.036933] (-) TimerEvent: {}
+[5.138307] (-) TimerEvent: {}
+[5.239104] (-) TimerEvent: {}
+[5.295631] (ack_control) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[5.339312] (-) TimerEvent: {}
+[5.440182] (-) TimerEvent: {}
+[5.541304] (-) TimerEvent: {}
+[5.642469] (-) TimerEvent: {}
+[5.743622] (-) TimerEvent: {}
+[5.844609] (-) TimerEvent: {}
+[5.945934] (-) TimerEvent: {}
+[6.047262] (-) TimerEvent: {}
+[6.148353] (-) TimerEvent: {}
+[6.249226] (-) TimerEvent: {}
+[6.350450] (-) TimerEvent: {}
+[6.451608] (-) TimerEvent: {}
+[6.538099] (ack_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[6.551866] (-) TimerEvent: {}
+[6.653010] (-) TimerEvent: {}
+[6.754118] (-) TimerEvent: {}
+[6.855385] (-) TimerEvent: {}
+[6.956438] (-) TimerEvent: {}
+[7.057704] (-) TimerEvent: {}
+[7.158861] (-) TimerEvent: {}
+[7.259775] (-) TimerEvent: {}
+[7.360533] (-) TimerEvent: {}
+[7.461421] (-) TimerEvent: {}
+[7.562472] (-) TimerEvent: {}
+[7.663311] (-) TimerEvent: {}
+[7.742781] (ack_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[7.763484] (-) TimerEvent: {}
+[7.864219] (-) TimerEvent: {}
+[7.965209] (-) TimerEvent: {}
+[8.065997] (-) TimerEvent: {}
+[8.167006] (-) TimerEvent: {}
+[8.268019] (-) TimerEvent: {}
+[8.372481] (-) TimerEvent: {}
+[8.473551] (-) TimerEvent: {}
+[8.574400] (-) TimerEvent: {}
+[8.675338] (-) TimerEvent: {}
+[8.776421] (-) TimerEvent: {}
+[8.877224] (-) TimerEvent: {}
+[8.978268] (-) TimerEvent: {}
+[9.079489] (-) TimerEvent: {}
+[9.180686] (-) TimerEvent: {}
+[9.281955] (-) TimerEvent: {}
+[9.383064] (-) TimerEvent: {}
+[9.484185] (-) TimerEvent: {}
+[9.585430] (-) TimerEvent: {}
+[9.686647] (-) TimerEvent: {}
+[9.787869] (-) TimerEvent: {}
+[9.888946] (-) TimerEvent: {}
+[9.989855] (-) TimerEvent: {}
+[10.090834] (-) TimerEvent: {}
+[10.191961] (-) TimerEvent: {}
+[10.293133] (-) TimerEvent: {}
+[10.393919] (-) TimerEvent: {}
+[10.494669] (-) TimerEvent: {}
+[10.595405] (-) TimerEvent: {}
+[10.696091] (-) TimerEvent: {}
+[10.796822] (-) TimerEvent: {}
+[10.897550] (-) TimerEvent: {}
+[10.998230] (-) TimerEvent: {}
+[11.098889] (-) TimerEvent: {}
+[11.199621] (-) TimerEvent: {}
+[11.300321] (-) TimerEvent: {}
+[11.400990] (-) TimerEvent: {}
+[11.501741] (-) TimerEvent: {}
+[11.601813] (ack_control) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[11.602380] (-) TimerEvent: {}
+[11.639081] (ack_control) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[11.702577] (-) TimerEvent: {}
+[11.803304] (-) TimerEvent: {}
+[11.885895] (ack_control) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[11.903496] (-) TimerEvent: {}
+[12.004280] (-) TimerEvent: {}
+[12.105120] (-) TimerEvent: {}
+[12.152320] (ack_control) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[12.172959] (ack_control) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[12.205289] (-) TimerEvent: {}
+[12.257467] (ack_control) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[12.270462] (ack_control) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[12.304686] (ack_control) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[12.305471] (-) TimerEvent: {}
+[12.341901] (ack_control) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[12.405589] (-) TimerEvent: {}
+[12.450227] (ack_control) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[12.505783] (-) TimerEvent: {}
+[12.606633] (-) TimerEvent: {}
+[12.707428] (-) TimerEvent: {}
+[12.808144] (-) TimerEvent: {}
+[12.835367] (ack_control) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[12.836673] (ack_control) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[12.908353] (-) TimerEvent: {}
+[13.009226] (-) TimerEvent: {}
+[13.110404] (-) TimerEvent: {}
+[13.188030] (ack_control) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[13.192029] (ack_control) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[13.210560] (-) TimerEvent: {}
+[13.311350] (-) TimerEvent: {}
+[13.412331] (-) TimerEvent: {}
+[13.513084] (-) TimerEvent: {}
+[13.614469] (-) TimerEvent: {}
+[13.715275] (-) TimerEvent: {}
+[13.815952] (-) TimerEvent: {}
+[13.901150] (ack_control) StdoutLine: {'line': b'-- Configuring done\n'}
+[13.916176] (-) TimerEvent: {}
+[13.982345] (ack_control) StdoutLine: {'line': b'-- Generating done\n'}
+[14.002247] (ack_control) StdoutLine: {'line': b'-- Build files have been written to: /home/pi/ros2_ws/src/ack_control/build/ack_control\n'}
+[14.016452] (-) TimerEvent: {}
+[14.042017] (ack_control) CommandEnded: {'returncode': 0}
+[14.043859] (ack_control) JobProgress: {'identifier': 'ack_control', 'progress': 'build'}
+[14.046569] (ack_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pi/ros2_ws/src/ack_control/build/ack_control', '--', '-j4', '-l4'], 'cwd': '/home/pi/ros2_ws/src/ack_control/build/ack_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_CLIENT', '100.81.44.86 33912 22'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pi/ros2_ws/install/turtlesim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi/ros2_ws/src'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/pi/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/pi/.local/bin:/home/pi/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/nvim-linux-arm64/bin:/opt/nvim/'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/pi/ros2_ws/install/turtlesim:/home/pi/ros2_ws/install/robo_rover:/home/pi/ros2_ws/install/hardware:/home/pi/ros2_ws/install/description:/home/pi/ros2_ws/install/control:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/pi/ros2_ws/src/ack_control/build/ack_control'), ('LC_ALL', 'C.UTF-8'), ('SSH_CONNECTION', '100.81.44.86 33912 100.86.204.127 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pi/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages:/home/pi/ros2_ws/install/robo_rover/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/ros2_ws/install/turtlesim:/home/pi/ros2_ws/install/robo_rover:/home/pi/ros2_ws/install/hardware:/home/pi/ros2_ws/install/description:/home/pi/ros2_ws/install/control:/opt/ros/humble')]), 'shell': False}
+[14.116637] (-) TimerEvent: {}
+[14.217609] (-) TimerEvent: {}
+[14.274876] (ack_control) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/ack_control.dir/src/ack_hardware.cpp.o\x1b[0m\n'}
+[14.317823] (-) TimerEvent: {}
+[14.418593] (-) TimerEvent: {}
+[14.519285] (-) TimerEvent: {}
+[14.620150] (-) TimerEvent: {}
+[14.720833] (-) TimerEvent: {}
+[14.821587] (-) TimerEvent: {}
+[14.922380] (-) TimerEvent: {}
+[15.023543] (-) TimerEvent: {}
+[15.124224] (-) TimerEvent: {}
+[15.224891] (-) TimerEvent: {}
+[15.325700] (-) TimerEvent: {}
+[15.426423] (-) TimerEvent: {}
+[15.527118] (-) TimerEvent: {}
+[15.627848] (-) TimerEvent: {}
+[15.728627] (-) TimerEvent: {}
+[15.829466] (-) TimerEvent: {}
+[15.930794] (-) TimerEvent: {}
+[16.032046] (-) TimerEvent: {}
+[16.132881] (-) TimerEvent: {}
+[16.233718] (-) TimerEvent: {}
+[16.334454] (-) TimerEvent: {}
+[16.435280] (-) TimerEvent: {}
+[16.536072] (-) TimerEvent: {}
+[16.636865] (-) TimerEvent: {}
+[16.737709] (-) TimerEvent: {}
+[16.838423] (-) TimerEvent: {}
+[16.939127] (-) TimerEvent: {}
+[17.040042] (-) TimerEvent: {}
+[17.140901] (-) TimerEvent: {}
+[17.241753] (-) TimerEvent: {}
+[17.342533] (-) TimerEvent: {}
+[17.443304] (-) TimerEvent: {}
+[17.544233] (-) TimerEvent: {}
+[17.644912] (-) TimerEvent: {}
+[17.745672] (-) TimerEvent: {}
+[17.846453] (-) TimerEvent: {}
+[17.947297] (-) TimerEvent: {}
+[18.048794] (-) TimerEvent: {}
+[18.149598] (-) TimerEvent: {}
+[18.250309] (-) TimerEvent: {}
+[18.351574] (-) TimerEvent: {}
+[18.452363] (-) TimerEvent: {}
+[18.553135] (-) TimerEvent: {}
+[18.653926] (-) TimerEvent: {}
+[18.754725] (-) TimerEvent: {}
+[18.855737] (-) TimerEvent: {}
+[18.956772] (-) TimerEvent: {}
+[19.057506] (-) TimerEvent: {}
+[19.158276] (-) TimerEvent: {}
+[19.259028] (-) TimerEvent: {}
+[19.359771] (-) TimerEvent: {}
+[19.460506] (-) TimerEvent: {}
+[19.561316] (-) TimerEvent: {}
+[19.662121] (-) TimerEvent: {}
+[19.762919] (-) TimerEvent: {}
+[19.863657] (-) TimerEvent: {}
+[19.964407] (-) TimerEvent: {}
+[20.065128] (-) TimerEvent: {}
+[20.165979] (-) TimerEvent: {}
+[20.266903] (-) TimerEvent: {}
+[20.367643] (-) TimerEvent: {}
+[20.468413] (-) TimerEvent: {}
+[20.569841] (-) TimerEvent: {}
+[20.610476] (ack_control) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library liback_control.so\x1b[0m\n'}
+[20.669998] (-) TimerEvent: {}
+[20.770765] (-) TimerEvent: {}
+[20.871749] (-) TimerEvent: {}
+[20.972951] (-) TimerEvent: {}
+[21.074010] (-) TimerEvent: {}
+[21.175069] (-) TimerEvent: {}
+[21.276076] (-) TimerEvent: {}
+[21.376912] (-) TimerEvent: {}
+[21.477668] (-) TimerEvent: {}
+[21.514724] (ack_control) StdoutLine: {'line': b'[100%] Built target ack_control\n'}
+[21.554983] (ack_control) CommandEnded: {'returncode': 0}
+[21.556798] (ack_control) JobProgress: {'identifier': 'ack_control', 'progress': 'install'}
+[21.577832] (-) TimerEvent: {}
+[21.593805] (ack_control) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/pi/ros2_ws/src/ack_control/build/ack_control'], 'cwd': '/home/pi/ros2_ws/src/ack_control/build/ack_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_CLIENT', '100.81.44.86 33912 22'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pi/ros2_ws/install/turtlesim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi/ros2_ws/src'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/pi/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/pi/.local/bin:/home/pi/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/nvim-linux-arm64/bin:/opt/nvim/'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/pi/ros2_ws/install/turtlesim:/home/pi/ros2_ws/install/robo_rover:/home/pi/ros2_ws/install/hardware:/home/pi/ros2_ws/install/description:/home/pi/ros2_ws/install/control:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/pi/ros2_ws/src/ack_control/build/ack_control'), ('LC_ALL', 'C.UTF-8'), ('SSH_CONNECTION', '100.81.44.86 33912 100.86.204.127 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pi/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages:/home/pi/ros2_ws/install/robo_rover/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/ros2_ws/install/turtlesim:/home/pi/ros2_ws/install/robo_rover:/home/pi/ros2_ws/install/hardware:/home/pi/ros2_ws/install/description:/home/pi/ros2_ws/install/control:/opt/ros/humble')]), 'shell': False}
+[21.627326] (ack_control) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[21.628084] (ack_control) StdoutLine: {'line': b'-- Installing: /home/pi/ros2_ws/src/ack_control/install/ack_control/share/ack_control/ack_control.xml\n'}
+[21.630012] (ack_control) StdoutLine: {'line': b'-- Installing: /home/pi/ros2_ws/src/ack_control/install/ack_control/lib/liback_control.so\n'}
+[21.635996] (ack_control) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/ros2_ws/src/ack_control/install/ack_control/lib/liback_control.so" to ""\n'}
+[21.636578] (ack_control) StdoutLine: {'line': b'-- Installing: /home/pi/ros2_ws/src/ack_control/install/ack_control/share/ack_control/config\n'}
+[21.636970] (ack_control) StdoutLine: {'line': b'-- Installing: /home/pi/ros2_ws/src/ack_control/install/ack_control/share/ack_control/description\n'}
+[21.637453] (ack_control) StdoutLine: {'line': b'-- Installing: /home/pi/ros2_ws/src/ack_control/install/ack_control/share/ack_control/launch\n'}
+[21.638111] (ack_control) StdoutLine: {'line': b'-- Installing: /home/pi/ros2_ws/src/ack_control/install/ack_control/include\n'}
+[21.638610] (ack_control) StdoutLine: {'line': b'-- Installing: /home/pi/ros2_ws/src/ack_control/install/ack_control/include/ack_control\n'}
+[21.639162] (ack_control) StdoutLine: {'line': b'-- Installing: /home/pi/ros2_ws/src/ack_control/install/ack_control/include/ack_control/ack_hardware.hpp\n'}
+[21.640868] (ack_control) StdoutLine: {'line': b'-- Installing: /home/pi/ros2_ws/src/ack_control/install/ack_control/share/ament_index/resource_index/package_run_dependencies/ack_control\n'}
+[21.642624] (ack_control) StdoutLine: {'line': b'-- Installing: /home/pi/ros2_ws/src/ack_control/install/ack_control/share/ament_index/resource_index/parent_prefix_path/ack_control\n'}
+[21.644146] (ack_control) StdoutLine: {'line': b'-- Installing: /home/pi/ros2_ws/src/ack_control/install/ack_control/share/ack_control/environment/ament_prefix_path.sh\n'}
+[21.645286] (ack_control) StdoutLine: {'line': b'-- Installing: /home/pi/ros2_ws/src/ack_control/install/ack_control/share/ack_control/environment/ament_prefix_path.dsv\n'}
+[21.646537] (ack_control) StdoutLine: {'line': b'-- Installing: /home/pi/ros2_ws/src/ack_control/install/ack_control/share/ack_control/environment/path.sh\n'}
+[21.647690] (ack_control) StdoutLine: {'line': b'-- Installing: /home/pi/ros2_ws/src/ack_control/install/ack_control/share/ack_control/environment/path.dsv\n'}
+[21.648820] (ack_control) StdoutLine: {'line': b'-- Installing: /home/pi/ros2_ws/src/ack_control/install/ack_control/share/ack_control/local_setup.bash\n'}
+[21.650057] (ack_control) StdoutLine: {'line': b'-- Installing: /home/pi/ros2_ws/src/ack_control/install/ack_control/share/ack_control/local_setup.sh\n'}
+[21.651243] (ack_control) StdoutLine: {'line': b'-- Installing: /home/pi/ros2_ws/src/ack_control/install/ack_control/share/ack_control/local_setup.zsh\n'}
+[21.652383] (ack_control) StdoutLine: {'line': b'-- Installing: /home/pi/ros2_ws/src/ack_control/install/ack_control/share/ack_control/local_setup.dsv\n'}
+[21.653499] (ack_control) StdoutLine: {'line': b'-- Installing: /home/pi/ros2_ws/src/ack_control/install/ack_control/share/ack_control/package.dsv\n'}
+[21.655091] (ack_control) StdoutLine: {'line': b'-- Installing: /home/pi/ros2_ws/src/ack_control/install/ack_control/share/ament_index/resource_index/packages/ack_control\n'}
+[21.656699] (ack_control) StdoutLine: {'line': b'-- Installing: /home/pi/ros2_ws/src/ack_control/install/ack_control/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/ack_control\n'}
+[21.658306] (ack_control) StdoutLine: {'line': b'-- Installing: /home/pi/ros2_ws/src/ack_control/install/ack_control/share/ack_control/cmake/ack_controlConfig.cmake\n'}
+[21.659302] (ack_control) StdoutLine: {'line': b'-- Installing: /home/pi/ros2_ws/src/ack_control/install/ack_control/share/ack_control/cmake/ack_controlConfig-version.cmake\n'}
+[21.660424] (ack_control) StdoutLine: {'line': b'-- Installing: /home/pi/ros2_ws/src/ack_control/install/ack_control/share/ack_control/package.xml\n'}
+[21.666149] (ack_control) CommandEnded: {'returncode': 0}
+[21.678026] (-) TimerEvent: {}
+[21.780035] (-) TimerEvent: {}
+[21.789745] (ack_control) JobEnded: {'identifier': 'ack_control', 'rc': 0}
+[21.792548] (-) EventReactorShutdown: {}

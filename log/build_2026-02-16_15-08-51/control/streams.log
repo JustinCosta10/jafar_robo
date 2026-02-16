@@ -1,0 +1,42 @@
+[0.119s] Invoking command in '/home/pi/ros2_ws/build/control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/pi/ros2_ws/src/control -DCMAKE_INSTALL_PREFIX=/home/pi/ros2_ws/install/control
+[1.341s] -- The C compiler identification is GNU 11.4.0
+[2.323s] -- The CXX compiler identification is GNU 11.4.0
+[2.362s] -- Detecting C compiler ABI info
+[2.843s] -- Detecting C compiler ABI info - done
+[2.866s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.867s] -- Detecting C compile features
+[2.869s] -- Detecting C compile features - done
+[2.888s] -- Detecting CXX compiler ABI info
+[3.372s] -- Detecting CXX compiler ABI info - done
+[3.409s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.411s] -- Detecting CXX compile features
+[3.413s] -- Detecting CXX compile features - done
+[3.447s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[4.629s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[5.546s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[6.168s] -- Added test 'lint_cmake' to check CMake code style
+[6.176s] -- Added test 'xmllint' to check XML markup files
+[6.188s] -- Configuring done
+[6.209s] -- Generating done
+[6.218s] -- Build files have been written to: /home/pi/ros2_ws/build/control
+[6.261s] Invoked command in '/home/pi/ros2_ws/build/control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/pi/ros2_ws/src/control -DCMAKE_INSTALL_PREFIX=/home/pi/ros2_ws/install/control
+[6.270s] Invoking command in '/home/pi/ros2_ws/build/control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/pi/ros2_ws/build/control -- -j4 -l4
+[6.487s] Invoked command in '/home/pi/ros2_ws/build/control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/pi/ros2_ws/build/control -- -j4 -l4
+[6.497s] Invoking command in '/home/pi/ros2_ws/build/control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/pi/ros2_ws/build/control
+[6.555s] -- Install configuration: ""
+[6.557s] -- Installing: /home/pi/ros2_ws/install/control/share/ament_index/resource_index/package_run_dependencies/control
+[6.561s] -- Installing: /home/pi/ros2_ws/install/control/share/ament_index/resource_index/parent_prefix_path/control
+[6.563s] -- Installing: /home/pi/ros2_ws/install/control/share/control/environment/ament_prefix_path.sh
+[6.569s] -- Installing: /home/pi/ros2_ws/install/control/share/control/environment/ament_prefix_path.dsv
+[6.571s] -- Installing: /home/pi/ros2_ws/install/control/share/control/environment/path.sh
+[6.576s] -- Installing: /home/pi/ros2_ws/install/control/share/control/environment/path.dsv
+[6.576s] -- Installing: /home/pi/ros2_ws/install/control/share/control/local_setup.bash
+[6.581s] -- Installing: /home/pi/ros2_ws/install/control/share/control/local_setup.sh
+[6.587s] -- Installing: /home/pi/ros2_ws/install/control/share/control/local_setup.zsh
+[6.587s] -- Installing: /home/pi/ros2_ws/install/control/share/control/local_setup.dsv
+[6.588s] -- Installing: /home/pi/ros2_ws/install/control/share/control/package.dsv
+[6.589s] -- Installing: /home/pi/ros2_ws/install/control/share/ament_index/resource_index/packages/control
+[6.589s] -- Installing: /home/pi/ros2_ws/install/control/share/control/cmake/controlConfig.cmake
+[6.592s] -- Installing: /home/pi/ros2_ws/install/control/share/control/cmake/controlConfig-version.cmake
+[6.592s] -- Installing: /home/pi/ros2_ws/install/control/share/control/package.xml
+[6.596s] Invoked command in '/home/pi/ros2_ws/build/control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/pi/ros2_ws/build/control
