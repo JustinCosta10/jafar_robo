@@ -1,7 +1,0 @@
-<library path="ack_control">
-  <class name="ack_control/AckHardware"
-         type="ack_control::AckHardware"
-         base_class_type="hardware_interface::SystemInterface">
-    <description>Ackermann hardware interface for ack_control package.</description>
-  </class>
-</library>

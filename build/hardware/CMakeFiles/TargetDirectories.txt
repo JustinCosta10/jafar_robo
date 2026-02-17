@@ -1,9 +1,0 @@
-/home/pi/ros2_ws/build/hardware/CMakeFiles/uninstall.dir
-/home/pi/ros2_ws/build/hardware/CMakeFiles/hardware_uninstall.dir
-/home/pi/ros2_ws/build/hardware/CMakeFiles/test.dir
-/home/pi/ros2_ws/build/hardware/CMakeFiles/edit_cache.dir
-/home/pi/ros2_ws/build/hardware/CMakeFiles/rebuild_cache.dir
-/home/pi/ros2_ws/build/hardware/CMakeFiles/list_install_components.dir
-/home/pi/ros2_ws/build/hardware/CMakeFiles/install.dir
-/home/pi/ros2_ws/build/hardware/CMakeFiles/install/local.dir
-/home/pi/ros2_ws/build/hardware/CMakeFiles/install/strip.dir
