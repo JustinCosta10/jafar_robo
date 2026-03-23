@@ -1,0 +1,11 @@
+*/build/
+*/log/
+*/install/
+
+*/__pycache__/
+*.pyc
+*.pyo
+
+*.env*
+*.gv
+frames_*.pdf
