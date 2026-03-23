@@ -38,7 +38,7 @@ class RGBNode(Node):
         except FileNotFoundError:
             self.get_logger().fatal(
                 f"Config file not found: '{config_path}'. "
-                "Pass the absolute path via: --ros-args -p config_path:=/absolute/path/to/aruco_config.yaml"
+                "Pass the absolute path via: --ros-args -p config_path:=/absolute/path/to/rgb_config.yaml"
             )
             raise
         config = self.config
