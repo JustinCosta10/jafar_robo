@@ -1,0 +1,34 @@
+[7.645s] Invoking command in '/home/pi/ros2_ws/src/py_Controller': PYTHONPATH=/home/pi/ros2_ws/build/py_Controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pi/ros2_ws/install/py_Controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/py_Controller build --build-base /home/pi/ros2_ws/build/py_Controller/build install --record /home/pi/ros2_ws/build/py_Controller/install.log --single-version-externally-managed install_data
+[9.963s] running egg_info
+[9.976s] creating ../../build/py_Controller/py_Controller.egg-info
+[9.979s] writing ../../build/py_Controller/py_Controller.egg-info/PKG-INFO
+[9.985s] writing dependency_links to ../../build/py_Controller/py_Controller.egg-info/dependency_links.txt
+[9.990s] writing entry points to ../../build/py_Controller/py_Controller.egg-info/entry_points.txt
+[9.991s] writing requirements to ../../build/py_Controller/py_Controller.egg-info/requires.txt
+[9.992s] writing top-level names to ../../build/py_Controller/py_Controller.egg-info/top_level.txt
+[9.993s] writing manifest file '../../build/py_Controller/py_Controller.egg-info/SOURCES.txt'
+[10.022s] reading manifest file '../../build/py_Controller/py_Controller.egg-info/SOURCES.txt'
+[10.023s] adding license file 'LICENSE'
+[10.026s] writing manifest file '../../build/py_Controller/py_Controller.egg-info/SOURCES.txt'
+[10.036s] running build
+[10.037s] running build_py
+[10.037s] creating /home/pi/ros2_ws/build/py_Controller/build
+[10.038s] creating /home/pi/ros2_ws/build/py_Controller/build/lib
+[10.039s] creating /home/pi/ros2_ws/build/py_Controller/build/lib/py_Controller
+[10.040s] copying py_Controller/__init__.py -> /home/pi/ros2_ws/build/py_Controller/build/lib/py_Controller
+[10.040s] running install
+[10.041s] running install_lib
+[10.057s] creating /home/pi/ros2_ws/install/py_Controller/lib/python3.10/site-packages/py_Controller
+[10.057s] copying /home/pi/ros2_ws/build/py_Controller/build/lib/py_Controller/__init__.py -> /home/pi/ros2_ws/install/py_Controller/lib/python3.10/site-packages/py_Controller
+[10.061s] byte-compiling /home/pi/ros2_ws/install/py_Controller/lib/python3.10/site-packages/py_Controller/__init__.py to __init__.cpython-310.pyc
+[10.067s] running install_data
+[10.069s] creating /home/pi/ros2_ws/install/py_Controller/share/ament_index
+[10.069s] creating /home/pi/ros2_ws/install/py_Controller/share/ament_index/resource_index
+[10.070s] creating /home/pi/ros2_ws/install/py_Controller/share/ament_index/resource_index/packages
+[10.070s] copying resource/py_Controller -> /home/pi/ros2_ws/install/py_Controller/share/ament_index/resource_index/packages
+[10.071s] copying package.xml -> /home/pi/ros2_ws/install/py_Controller/share/py_Controller
+[10.072s] running install_egg_info
+[10.098s] Copying ../../build/py_Controller/py_Controller.egg-info to /home/pi/ros2_ws/install/py_Controller/lib/python3.10/site-packages/py_Controller-0.0.0-py3.10.egg-info
+[10.116s] running install_scripts
+[10.325s] writing list of installed files to '/home/pi/ros2_ws/build/py_Controller/install.log'
+[10.627s] Invoked command in '/home/pi/ros2_ws/src/py_Controller' returned '0': PYTHONPATH=/home/pi/ros2_ws/build/py_Controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pi/ros2_ws/install/py_Controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/py_Controller build --build-base /home/pi/ros2_ws/build/py_Controller/build install --record /home/pi/ros2_ws/build/py_Controller/install.log --single-version-externally-managed install_data

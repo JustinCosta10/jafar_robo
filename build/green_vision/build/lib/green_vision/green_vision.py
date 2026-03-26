@@ -97,7 +97,7 @@ def main(args=None):
     except KeyboardInterrupt:
         node.get_logger().info("Shutting down Green Vision Node...")
     finally:
-        node.destroy_node()
+        #node.destroy_node()
         rclpy.shutdown()
 
 if __name__ == '__main__':
