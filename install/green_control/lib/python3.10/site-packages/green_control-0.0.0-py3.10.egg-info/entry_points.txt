@@ -1,0 +1,3 @@
+[console_scripts]
+green_control = green_control.green_control:main
+

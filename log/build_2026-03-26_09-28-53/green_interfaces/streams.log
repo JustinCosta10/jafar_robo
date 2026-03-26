@@ -1,0 +1,34 @@
+[1.463s] Invoking command in '/home/pi/ros2_ws/build/green_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/pi/ros2_ws/src/green_interfaces -DCMAKE_INSTALL_PREFIX=/home/pi/ros2_ws/install/green_interfaces
+[2.672s] -- The C compiler identification is GNU 11.4.0
+[3.724s] -- The CXX compiler identification is GNU 11.4.0
+[3.818s] -- Detecting C compiler ABI info
+[4.495s] -- Detecting C compiler ABI info - done
+[4.549s] -- Check for working C compiler: /usr/bin/cc - skipped
+[4.568s] -- Detecting C compile features
+[4.581s] -- Detecting C compile features - done
+[4.627s] -- Detecting CXX compiler ABI info
+[5.281s] -- Detecting CXX compiler ABI info - done
+[5.321s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[5.323s] -- Detecting CXX compile features
+[5.325s] -- Detecting CXX compile features - done
+[5.375s] -- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+[6.468s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[7.333s] -- Found std_msgs: 4.9.1 (/opt/ros/humble/share/std_msgs/cmake)
+[8.104s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[8.235s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[8.362s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[8.470s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[8.616s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.814s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[8.902s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[9.985s] [31mCMake Error at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:229 (message):
+[9.986s]   Packages installing interfaces must include
+[9.986s]   '<member_of_group>rosidl_interface_packages</member_of_group>' in their
+[9.986s]   package.xml
+[9.987s] Call Stack (most recent call first):
+[9.987s]   CMakeLists.txt:29 (rosidl_generate_interfaces)
+[9.987s] 
+[9.987s] [0m
+[9.988s] -- Configuring incomplete, errors occurred!
+[9.988s] See also "/home/pi/ros2_ws/build/green_interfaces/CMakeFiles/CMakeOutput.log".
+[10.015s] Invoked command in '/home/pi/ros2_ws/build/green_interfaces' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/pi/ros2_ws/src/green_interfaces -DCMAKE_INSTALL_PREFIX=/home/pi/ros2_ws/install/green_interfaces

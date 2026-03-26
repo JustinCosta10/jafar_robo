@@ -1,0 +1,3 @@
+[console_scripts]
+green_vision = green_vision.green_vision:main
+

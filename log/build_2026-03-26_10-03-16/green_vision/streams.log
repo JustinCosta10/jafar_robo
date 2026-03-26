@@ -1,0 +1,21 @@
+[5.892s] Invoking command in '/home/pi/ros2_ws/src/green_vision': PYTHONPATH=/home/pi/ros2_ws/build/green_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pi/ros2_ws/install/green_vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/green_vision build --build-base /home/pi/ros2_ws/build/green_vision/build install --record /home/pi/ros2_ws/build/green_vision/install.log --single-version-externally-managed install_data
+[7.693s] running egg_info
+[7.695s] writing ../../build/green_vision/green_vision.egg-info/PKG-INFO
+[7.697s] writing dependency_links to ../../build/green_vision/green_vision.egg-info/dependency_links.txt
+[7.699s] writing entry points to ../../build/green_vision/green_vision.egg-info/entry_points.txt
+[7.703s] writing requirements to ../../build/green_vision/green_vision.egg-info/requires.txt
+[7.705s] writing top-level names to ../../build/green_vision/green_vision.egg-info/top_level.txt
+[7.711s] reading manifest file '../../build/green_vision/green_vision.egg-info/SOURCES.txt'
+[7.716s] writing manifest file '../../build/green_vision/green_vision.egg-info/SOURCES.txt'
+[7.717s] running build
+[7.717s] running build_py
+[7.719s] running install
+[7.720s] running install_lib
+[7.726s] running install_data
+[7.727s] running install_egg_info
+[7.738s] removing '/home/pi/ros2_ws/install/green_vision/lib/python3.10/site-packages/green_vision-0.0.0-py3.10.egg-info' (and everything under it)
+[7.742s] Copying ../../build/green_vision/green_vision.egg-info to /home/pi/ros2_ws/install/green_vision/lib/python3.10/site-packages/green_vision-0.0.0-py3.10.egg-info
+[7.749s] running install_scripts
+[7.862s] Installing green_vision script to /home/pi/ros2_ws/install/green_vision/lib/green_vision
+[7.863s] writing list of installed files to '/home/pi/ros2_ws/build/green_vision/install.log'
+[8.055s] Invoked command in '/home/pi/ros2_ws/src/green_vision' returned '0': PYTHONPATH=/home/pi/ros2_ws/build/green_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pi/ros2_ws/install/green_vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/green_vision build --build-base /home/pi/ros2_ws/build/green_vision/build install --record /home/pi/ros2_ws/build/green_vision/install.log --single-version-externally-managed install_data

@@ -1,0 +1,2 @@
+Invoking command in '/home/pi/ros2_ws/build/green_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/pi/ros2_ws/src/green_interfaces -DCMAKE_INSTALL_PREFIX=/home/pi/ros2_ws/install/green_interfaces
+Invoked command in '/home/pi/ros2_ws/build/green_interfaces' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/pi/ros2_ws/src/green_interfaces -DCMAKE_INSTALL_PREFIX=/home/pi/ros2_ws/install/green_interfaces

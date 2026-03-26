@@ -1,0 +1,5 @@
+  File "/home/pi/ros2_ws/install/green_vision/lib/python3.10/site-packages/green_vision/green_vision.py", line 78
+    self.get_logger().error(fjkkk"Failed to process image: {e}")
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax
+
