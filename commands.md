@@ -19,3 +19,7 @@ ros2 topic echo /scan
 
 Run Realsense: (https://github.com/realsenseai/realsense-ros)
 ros2 run realsense2_camera realsense2_camera_node
+
+Follow Green Nodes:
+ros2 run green_control green_control
+ros2 run green_vision green_vision
