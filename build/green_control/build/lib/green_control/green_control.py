@@ -8,9 +8,8 @@ class GreenControlNode(Node):
     def __init__(self):
         # Initialize the node with the name 'green_control_node'
         super().__init__('green_control_node')
-        
-        # 1. Setup Publishers/Subscribers here
-        # self.publisher_ = self.create_publisher(Twist, 'cmd_vel', 10)
+        self.subscriber = self.create_subscriber(PointStamped, "goal_point", 10)
+        self.publisher_ = self.create_publisher(Twist, 'cmd_vel', 10)
         
         # 2. Setup a Timer (runs at 10Hz / every 0.1s)
         self.timer = self.create_timer(0.1, self.control_loop)
@@ -20,9 +19,9 @@ class GreenControlNode(Node):
     def control_loop(self):
         """This function runs repeatedly based on the timer."""
         # Logic for your control goes here
-        # msg = Twist()
-        # msg.linear.x = 0.5
-        # self.publisher_.publish(msg)
+        msg = Twist()
+        msg.linear.x = 0.5
+        self.publisher_.publish(msg)
         
         self.get_logger().info("Running control loop...")
 

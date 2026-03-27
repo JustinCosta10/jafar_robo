@@ -18,6 +18,9 @@ class GreenVisionNode(Node):
         self.rgb = None
         self.paper_width = None
         self.paper_height = None
+        self.x = None
+        self.y = None
+        self.z = None
 
         self._setup_parameters()
         self._setup_subscribers()
@@ -53,14 +56,17 @@ class GreenVisionNode(Node):
 
     def _setup_publishers(self):
         self.debug_pub = self.create_publisher(Image, "perception/rgb_debug", 10)
-
-        # TODO: add pose publisher
+        self.point_pub = self.create_publisher(PointStamped, "goal_point", 10)
 
     def _setup_subscribers(self):
         self.image_sub = self.create_subscription(
             Image, "/camera/color/image_raw", self.image_callback, 10
         )
+        self.depth_sub = self.create_subscription(Image, "/camera/depth/image_rect_raw", depth_callback)
+    def depth_callback(self, msg):
+        pass
 
+        
     def image_callback(self, msg):
 
         try:
@@ -77,12 +83,24 @@ class GreenVisionNode(Node):
             contours, _ = cv2.findContours(
                 mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE
             )  # detected boundaries of masked areas
-
-            # 5. TODO compute centroid / error
-
-            # 6. TODO publish pose to controller node
-
-            # TODO: implement timeout / fallback beahvior if paper is lost
+            #5. compute centroid
+            if contours:
+                max_countour = max(contours, key=cv2.contourArea)
+                #compares the contours areas to find the largest area found
+                M = cv2.moments(max_contour)
+                if M["m00"] != 0:
+                    cX = int(M["m10"] / M["m00"])
+                    cY = int(M["m01"] / M["m00"])
+            #6 create and publish message
+                    point_msg = PointStamped()
+                    
+                    point_msg.point.x = cX
+                    point_msg.point.y = cY
+                    #self.x = cX
+                    #self.y = cY
+                    point_pub.publish(point_msg)
+            else:
+                node.get_logger().info("Mask not created.")
 
             # 7. draw debug info
             self.debug_pub.publish(self.bridge.cv2_to_imgmsg(cv_image, "bgr8"))
@@ -97,7 +115,6 @@ def main(args=None):
     except KeyboardInterrupt:
         node.get_logger().info("Shutting down Green Vision Node...")
     finally:
-        #node.destroy_node()
         rclpy.shutdown()
 
 if __name__ == '__main__':

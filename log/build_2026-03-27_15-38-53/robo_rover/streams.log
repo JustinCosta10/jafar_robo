@@ -1,0 +1,40 @@
+[0.084s] Invoking command in '/home/pi/ros2_ws/build/robo_rover': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/py_Controller:/home/pi/ros2_ws/install/green_vision:/home/pi/ros2_ws/install/green_control:/opt/ros/humble /usr/bin/cmake --build /home/pi/ros2_ws/build/robo_rover -- -j4 -l4
+[0.438s] Built target ament_cmake_python_symlink_robo_rover
+[2.909s] running egg_info
+[2.909s] writing robo_rover.egg-info/PKG-INFO
+[2.917s] writing dependency_links to robo_rover.egg-info/dependency_links.txt
+[2.919s] writing top-level names to robo_rover.egg-info/top_level.txt
+[2.925s] reading manifest file 'robo_rover.egg-info/SOURCES.txt'
+[2.933s] writing manifest file 'robo_rover.egg-info/SOURCES.txt'
+[3.138s] Built target ament_cmake_python_build_robo_rover_egg
+[3.261s] Invoked command in '/home/pi/ros2_ws/build/robo_rover' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/py_Controller:/home/pi/ros2_ws/install/green_vision:/home/pi/ros2_ws/install/green_control:/opt/ros/humble /usr/bin/cmake --build /home/pi/ros2_ws/build/robo_rover -- -j4 -l4
+[3.288s] Invoking command in '/home/pi/ros2_ws/build/robo_rover': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/py_Controller:/home/pi/ros2_ws/install/green_vision:/home/pi/ros2_ws/install/green_control:/opt/ros/humble /usr/bin/cmake --install /home/pi/ros2_ws/build/robo_rover
+[3.357s] -- Install configuration: ""
+[3.369s] -- Execute custom install script
+[3.375s] -- Up-to-date symlink: /home/pi/ros2_ws/install/robo_rover/share/robo_rover/environment/pythonpath.sh
+[3.376s] -- Up-to-date symlink: /home/pi/ros2_ws/install/robo_rover/share/robo_rover/environment/pythonpath.dsv
+[3.377s] -- Up-to-date symlink: /home/pi/ros2_ws/install/robo_rover/local/lib/python3.10/dist-packages/robo_rover-1.0.0-py3.10.egg-info/PKG-INFO
+[3.381s] -- Up-to-date symlink: /home/pi/ros2_ws/install/robo_rover/local/lib/python3.10/dist-packages/robo_rover-1.0.0-py3.10.egg-info/SOURCES.txt
+[3.393s] -- Up-to-date symlink: /home/pi/ros2_ws/install/robo_rover/local/lib/python3.10/dist-packages/robo_rover-1.0.0-py3.10.egg-info/dependency_links.txt
+[3.394s] -- Up-to-date symlink: /home/pi/ros2_ws/install/robo_rover/local/lib/python3.10/dist-packages/robo_rover-1.0.0-py3.10.egg-info/top_level.txt
+[3.399s] -- Up-to-date symlink: /home/pi/ros2_ws/install/robo_rover/local/lib/python3.10/dist-packages/robo_rover/__init__.py
+[3.399s] -- Up-to-date symlink: /home/pi/ros2_ws/install/robo_rover/local/lib/python3.10/dist-packages/robo_rover/rover_node.py
+[3.403s] -- Up-to-date symlink: /home/pi/ros2_ws/install/robo_rover/share/robo_rover/launch/rover_launch.py
+[3.404s] -- Up-to-date symlink: /home/pi/ros2_ws/install/robo_rover/share/ament_index/resource_index/package_run_dependencies/robo_rover
+[3.405s] -- Up-to-date symlink: /home/pi/ros2_ws/install/robo_rover/share/ament_index/resource_index/parent_prefix_path/robo_rover
+[3.408s] -- Up-to-date symlink: /home/pi/ros2_ws/install/robo_rover/share/robo_rover/environment/ament_prefix_path.sh
+[3.408s] -- Up-to-date symlink: /home/pi/ros2_ws/install/robo_rover/share/robo_rover/environment/ament_prefix_path.dsv
+[3.413s] -- Up-to-date symlink: /home/pi/ros2_ws/install/robo_rover/share/robo_rover/environment/path.sh
+[3.417s] -- Up-to-date symlink: /home/pi/ros2_ws/install/robo_rover/share/robo_rover/environment/path.dsv
+[3.418s] -- Up-to-date symlink: /home/pi/ros2_ws/install/robo_rover/share/robo_rover/local_setup.bash
+[3.420s] -- Up-to-date symlink: /home/pi/ros2_ws/install/robo_rover/share/robo_rover/local_setup.sh
+[3.422s] -- Up-to-date symlink: /home/pi/ros2_ws/install/robo_rover/share/robo_rover/local_setup.zsh
+[3.425s] -- Up-to-date symlink: /home/pi/ros2_ws/install/robo_rover/share/robo_rover/local_setup.dsv
+[3.426s] -- Symlinking: /home/pi/ros2_ws/install/robo_rover/share/robo_rover/package.dsv
+[3.483s] -- Up-to-date symlink: /home/pi/ros2_ws/install/robo_rover/share/ament_index/resource_index/packages/robo_rover
+[3.484s] -- Up-to-date symlink: /home/pi/ros2_ws/install/robo_rover/share/robo_rover/cmake/robo_roverConfig.cmake
+[3.490s] -- Up-to-date symlink: /home/pi/ros2_ws/install/robo_rover/share/robo_rover/cmake/robo_roverConfig-version.cmake
+[3.496s] -- Up-to-date symlink: /home/pi/ros2_ws/install/robo_rover/share/robo_rover/package.xml
+[3.786s] Listing '/home/pi/ros2_ws/install/robo_rover/local/lib/python3.10/dist-packages/robo_rover'...
+[3.834s] -- Up-to-date: /home/pi/ros2_ws/install/robo_rover/lib/robo_rover/rover_node
+[3.855s] Invoked command in '/home/pi/ros2_ws/build/robo_rover' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/py_Controller:/home/pi/ros2_ws/install/green_vision:/home/pi/ros2_ws/install/green_control:/opt/ros/humble /usr/bin/cmake --install /home/pi/ros2_ws/build/robo_rover

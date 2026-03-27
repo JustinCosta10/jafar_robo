@@ -1,0 +1,29 @@
+[0.140s] Invoking command in '/home/pi/ros2_ws/build/ack_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/py_Controller:/home/pi/ros2_ws/install/green_vision:/home/pi/ros2_ws/install/green_control:/opt/ros/humble /usr/bin/cmake --build /home/pi/ros2_ws/build/ack_control -- -j4 -l4
+[2.165s] [100%] Built target ack_control
+[2.183s] Invoked command in '/home/pi/ros2_ws/build/ack_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/py_Controller:/home/pi/ros2_ws/install/green_vision:/home/pi/ros2_ws/install/green_control:/opt/ros/humble /usr/bin/cmake --build /home/pi/ros2_ws/build/ack_control -- -j4 -l4
+[2.216s] Invoking command in '/home/pi/ros2_ws/build/ack_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/py_Controller:/home/pi/ros2_ws/install/green_vision:/home/pi/ros2_ws/install/green_control:/opt/ros/humble /usr/bin/cmake --install /home/pi/ros2_ws/build/ack_control
+[3.698s] -- Install configuration: ""
+[3.699s] -- Execute custom install script
+[3.700s] -- Up-to-date symlink: /home/pi/ros2_ws/install/ack_control/share/ack_control//ack_control.xml
+[3.701s] -- Up-to-date symlink: /home/pi/ros2_ws/install/ack_control/lib/liback_control.so
+[3.703s] -- Up-to-date symlink: /home/pi/ros2_ws/install/ack_control/share/ack_control/config/ack_controllers.yaml
+[3.704s] -- Up-to-date symlink: /home/pi/ros2_ws/install/ack_control/share/ack_control/description/deep.urdf.xacro
+[3.709s] -- Up-to-date symlink: /home/pi/ros2_ws/install/ack_control/share/ack_control/launch/bringup.launch.py
+[3.711s] -- Up-to-date symlink: /home/pi/ros2_ws/install/ack_control/include/ack_control/ack_hardware.hpp
+[3.714s] -- Up-to-date symlink: /home/pi/ros2_ws/install/ack_control/share/ament_index/resource_index/package_run_dependencies/ack_control
+[3.717s] -- Up-to-date symlink: /home/pi/ros2_ws/install/ack_control/share/ament_index/resource_index/parent_prefix_path/ack_control
+[3.718s] -- Up-to-date symlink: /home/pi/ros2_ws/install/ack_control/share/ack_control/environment/ament_prefix_path.sh
+[3.719s] -- Up-to-date symlink: /home/pi/ros2_ws/install/ack_control/share/ack_control/environment/ament_prefix_path.dsv
+[3.720s] -- Up-to-date symlink: /home/pi/ros2_ws/install/ack_control/share/ack_control/environment/path.sh
+[3.721s] -- Up-to-date symlink: /home/pi/ros2_ws/install/ack_control/share/ack_control/environment/path.dsv
+[3.722s] -- Up-to-date symlink: /home/pi/ros2_ws/install/ack_control/share/ack_control/local_setup.bash
+[3.724s] -- Up-to-date symlink: /home/pi/ros2_ws/install/ack_control/share/ack_control/local_setup.sh
+[3.725s] -- Up-to-date symlink: /home/pi/ros2_ws/install/ack_control/share/ack_control/local_setup.zsh
+[3.726s] -- Up-to-date symlink: /home/pi/ros2_ws/install/ack_control/share/ack_control/local_setup.dsv
+[3.726s] -- Symlinking: /home/pi/ros2_ws/install/ack_control/share/ack_control/package.dsv
+[3.727s] -- Up-to-date symlink: /home/pi/ros2_ws/install/ack_control/share/ament_index/resource_index/packages/ack_control
+[3.728s] -- Up-to-date symlink: /home/pi/ros2_ws/install/ack_control/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/ack_control
+[3.728s] -- Up-to-date symlink: /home/pi/ros2_ws/install/ack_control/share/ack_control/cmake/ack_controlConfig.cmake
+[3.729s] -- Up-to-date symlink: /home/pi/ros2_ws/install/ack_control/share/ack_control/cmake/ack_controlConfig-version.cmake
+[3.730s] -- Up-to-date symlink: /home/pi/ros2_ws/install/ack_control/share/ack_control/package.xml
+[3.730s] Invoked command in '/home/pi/ros2_ws/build/ack_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/py_Controller:/home/pi/ros2_ws/install/green_vision:/home/pi/ros2_ws/install/green_control:/opt/ros/humble /usr/bin/cmake --install /home/pi/ros2_ws/build/ack_control

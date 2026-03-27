@@ -1,0 +1,78 @@
+[5.680s] Invoking command in '/home/pi/ros2_ws/src/realsense-ros/realsense2_ros_mqtt_bridge': PYTHONPATH=/home/pi/ros2_ws/build/realsense2_ros_mqtt_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pi/ros2_ws/install/realsense2_ros_mqtt_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/realsense2_ros_mqtt_bridge build --build-base /home/pi/ros2_ws/build/realsense2_ros_mqtt_bridge/build install --record /home/pi/ros2_ws/build/realsense2_ros_mqtt_bridge/install.log --single-version-externally-managed install_data
+[7.977s] running egg_info
+[7.980s] creating ../../../build/realsense2_ros_mqtt_bridge/realsense2_ros_mqtt_bridge.egg-info
+[7.982s] writing ../../../build/realsense2_ros_mqtt_bridge/realsense2_ros_mqtt_bridge.egg-info/PKG-INFO
+[7.989s] writing dependency_links to ../../../build/realsense2_ros_mqtt_bridge/realsense2_ros_mqtt_bridge.egg-info/dependency_links.txt
+[7.990s] writing entry points to ../../../build/realsense2_ros_mqtt_bridge/realsense2_ros_mqtt_bridge.egg-info/entry_points.txt
+[7.990s] writing requirements to ../../../build/realsense2_ros_mqtt_bridge/realsense2_ros_mqtt_bridge.egg-info/requires.txt
+[7.991s] writing top-level names to ../../../build/realsense2_ros_mqtt_bridge/realsense2_ros_mqtt_bridge.egg-info/top_level.txt
+[7.991s] writing manifest file '../../../build/realsense2_ros_mqtt_bridge/realsense2_ros_mqtt_bridge.egg-info/SOURCES.txt'
+[7.996s] reading manifest file '../../../build/realsense2_ros_mqtt_bridge/realsense2_ros_mqtt_bridge.egg-info/SOURCES.txt'
+[8.001s] writing manifest file '../../../build/realsense2_ros_mqtt_bridge/realsense2_ros_mqtt_bridge.egg-info/SOURCES.txt'
+[8.002s] running build
+[8.002s] running build_py
+[8.004s] creating /home/pi/ros2_ws/build/realsense2_ros_mqtt_bridge/build
+[8.006s] creating /home/pi/ros2_ws/build/realsense2_ros_mqtt_bridge/build/lib
+[8.009s] creating /home/pi/ros2_ws/build/realsense2_ros_mqtt_bridge/build/lib/src
+[8.012s] copying src/safety_interface_config_handler.py -> /home/pi/ros2_ws/build/realsense2_ros_mqtt_bridge/build/lib/src
+[8.012s] copying src/calib_config_handler.py -> /home/pi/ros2_ws/build/realsense2_ros_mqtt_bridge/build/lib/src
+[8.015s] copying src/parameter_handler.py -> /home/pi/ros2_ws/build/realsense2_ros_mqtt_bridge/build/lib/src
+[8.018s] copying src/entry_point.py -> /home/pi/ros2_ws/build/realsense2_ros_mqtt_bridge/build/lib/src
+[8.022s] copying src/frame_handler.py -> /home/pi/ros2_ws/build/realsense2_ros_mqtt_bridge/build/lib/src
+[8.023s] copying src/application_config_handler.py -> /home/pi/ros2_ws/build/realsense2_ros_mqtt_bridge/build/lib/src
+[8.023s] copying src/triggered_calibration_handler.py -> /home/pi/ros2_ws/build/realsense2_ros_mqtt_bridge/build/lib/src
+[8.024s] copying src/hwm_command_handler.py -> /home/pi/ros2_ws/build/realsense2_ros_mqtt_bridge/build/lib/src
+[8.037s] copying src/transformation_handler.py -> /home/pi/ros2_ws/build/realsense2_ros_mqtt_bridge/build/lib/src
+[8.038s] copying src/safety_preset_handler.py -> /home/pi/ros2_ws/build/realsense2_ros_mqtt_bridge/build/lib/src
+[8.039s] copying src/__init__.py -> /home/pi/ros2_ws/build/realsense2_ros_mqtt_bridge/build/lib/src
+[8.039s] copying src/service_handler.py -> /home/pi/ros2_ws/build/realsense2_ros_mqtt_bridge/build/lib/src
+[8.040s] copying src/mqtt_bridge_node.py -> /home/pi/ros2_ws/build/realsense2_ros_mqtt_bridge/build/lib/src
+[8.040s] copying src/hw_reset_handler.py -> /home/pi/ros2_ws/build/realsense2_ros_mqtt_bridge/build/lib/src
+[8.041s] copying src/device_handler.py -> /home/pi/ros2_ws/build/realsense2_ros_mqtt_bridge/build/lib/src
+[8.041s] running install
+[8.055s] running install_lib
+[8.055s] creating /home/pi/ros2_ws/install/realsense2_ros_mqtt_bridge/lib/python3.10/site-packages/src
+[8.056s] copying /home/pi/ros2_ws/build/realsense2_ros_mqtt_bridge/build/lib/src/safety_interface_config_handler.py -> /home/pi/ros2_ws/install/realsense2_ros_mqtt_bridge/lib/python3.10/site-packages/src
+[8.056s] copying /home/pi/ros2_ws/build/realsense2_ros_mqtt_bridge/build/lib/src/calib_config_handler.py -> /home/pi/ros2_ws/install/realsense2_ros_mqtt_bridge/lib/python3.10/site-packages/src
+[8.057s] copying /home/pi/ros2_ws/build/realsense2_ros_mqtt_bridge/build/lib/src/parameter_handler.py -> /home/pi/ros2_ws/install/realsense2_ros_mqtt_bridge/lib/python3.10/site-packages/src
+[8.057s] copying /home/pi/ros2_ws/build/realsense2_ros_mqtt_bridge/build/lib/src/entry_point.py -> /home/pi/ros2_ws/install/realsense2_ros_mqtt_bridge/lib/python3.10/site-packages/src
+[8.058s] copying /home/pi/ros2_ws/build/realsense2_ros_mqtt_bridge/build/lib/src/frame_handler.py -> /home/pi/ros2_ws/install/realsense2_ros_mqtt_bridge/lib/python3.10/site-packages/src
+[8.058s] copying /home/pi/ros2_ws/build/realsense2_ros_mqtt_bridge/build/lib/src/application_config_handler.py -> /home/pi/ros2_ws/install/realsense2_ros_mqtt_bridge/lib/python3.10/site-packages/src
+[8.059s] copying /home/pi/ros2_ws/build/realsense2_ros_mqtt_bridge/build/lib/src/triggered_calibration_handler.py -> /home/pi/ros2_ws/install/realsense2_ros_mqtt_bridge/lib/python3.10/site-packages/src
+[8.059s] copying /home/pi/ros2_ws/build/realsense2_ros_mqtt_bridge/build/lib/src/hwm_command_handler.py -> /home/pi/ros2_ws/install/realsense2_ros_mqtt_bridge/lib/python3.10/site-packages/src
+[8.060s] copying /home/pi/ros2_ws/build/realsense2_ros_mqtt_bridge/build/lib/src/transformation_handler.py -> /home/pi/ros2_ws/install/realsense2_ros_mqtt_bridge/lib/python3.10/site-packages/src
+[8.060s] copying /home/pi/ros2_ws/build/realsense2_ros_mqtt_bridge/build/lib/src/safety_preset_handler.py -> /home/pi/ros2_ws/install/realsense2_ros_mqtt_bridge/lib/python3.10/site-packages/src
+[8.069s] copying /home/pi/ros2_ws/build/realsense2_ros_mqtt_bridge/build/lib/src/__init__.py -> /home/pi/ros2_ws/install/realsense2_ros_mqtt_bridge/lib/python3.10/site-packages/src
+[8.070s] copying /home/pi/ros2_ws/build/realsense2_ros_mqtt_bridge/build/lib/src/service_handler.py -> /home/pi/ros2_ws/install/realsense2_ros_mqtt_bridge/lib/python3.10/site-packages/src
+[8.070s] copying /home/pi/ros2_ws/build/realsense2_ros_mqtt_bridge/build/lib/src/mqtt_bridge_node.py -> /home/pi/ros2_ws/install/realsense2_ros_mqtt_bridge/lib/python3.10/site-packages/src
+[8.071s] copying /home/pi/ros2_ws/build/realsense2_ros_mqtt_bridge/build/lib/src/hw_reset_handler.py -> /home/pi/ros2_ws/install/realsense2_ros_mqtt_bridge/lib/python3.10/site-packages/src
+[8.071s] copying /home/pi/ros2_ws/build/realsense2_ros_mqtt_bridge/build/lib/src/device_handler.py -> /home/pi/ros2_ws/install/realsense2_ros_mqtt_bridge/lib/python3.10/site-packages/src
+[8.072s] byte-compiling /home/pi/ros2_ws/install/realsense2_ros_mqtt_bridge/lib/python3.10/site-packages/src/safety_interface_config_handler.py to safety_interface_config_handler.cpython-310.pyc
+[8.078s] byte-compiling /home/pi/ros2_ws/install/realsense2_ros_mqtt_bridge/lib/python3.10/site-packages/src/calib_config_handler.py to calib_config_handler.cpython-310.pyc
+[8.078s] byte-compiling /home/pi/ros2_ws/install/realsense2_ros_mqtt_bridge/lib/python3.10/site-packages/src/parameter_handler.py to parameter_handler.cpython-310.pyc
+[8.079s] byte-compiling /home/pi/ros2_ws/install/realsense2_ros_mqtt_bridge/lib/python3.10/site-packages/src/entry_point.py to entry_point.cpython-310.pyc
+[8.083s] byte-compiling /home/pi/ros2_ws/install/realsense2_ros_mqtt_bridge/lib/python3.10/site-packages/src/frame_handler.py to frame_handler.cpython-310.pyc
+[8.089s] byte-compiling /home/pi/ros2_ws/install/realsense2_ros_mqtt_bridge/lib/python3.10/site-packages/src/application_config_handler.py to application_config_handler.cpython-310.pyc
+[8.095s] byte-compiling /home/pi/ros2_ws/install/realsense2_ros_mqtt_bridge/lib/python3.10/site-packages/src/triggered_calibration_handler.py to triggered_calibration_handler.cpython-310.pyc
+[8.098s] byte-compiling /home/pi/ros2_ws/install/realsense2_ros_mqtt_bridge/lib/python3.10/site-packages/src/hwm_command_handler.py to hwm_command_handler.cpython-310.pyc
+[8.110s] byte-compiling /home/pi/ros2_ws/install/realsense2_ros_mqtt_bridge/lib/python3.10/site-packages/src/transformation_handler.py to transformation_handler.cpython-310.pyc
+[8.110s] byte-compiling /home/pi/ros2_ws/install/realsense2_ros_mqtt_bridge/lib/python3.10/site-packages/src/safety_preset_handler.py to safety_preset_handler.cpython-310.pyc
+[8.113s] byte-compiling /home/pi/ros2_ws/install/realsense2_ros_mqtt_bridge/lib/python3.10/site-packages/src/__init__.py to __init__.cpython-310.pyc
+[8.114s] byte-compiling /home/pi/ros2_ws/install/realsense2_ros_mqtt_bridge/lib/python3.10/site-packages/src/service_handler.py to service_handler.cpython-310.pyc
+[8.119s] byte-compiling /home/pi/ros2_ws/install/realsense2_ros_mqtt_bridge/lib/python3.10/site-packages/src/mqtt_bridge_node.py to mqtt_bridge_node.cpython-310.pyc
+[8.133s] byte-compiling /home/pi/ros2_ws/install/realsense2_ros_mqtt_bridge/lib/python3.10/site-packages/src/hw_reset_handler.py to hw_reset_handler.cpython-310.pyc
+[8.133s] byte-compiling /home/pi/ros2_ws/install/realsense2_ros_mqtt_bridge/lib/python3.10/site-packages/src/device_handler.py to device_handler.cpython-310.pyc
+[8.134s] running install_data
+[8.138s] creating /home/pi/ros2_ws/install/realsense2_ros_mqtt_bridge/share/ament_index
+[8.139s] creating /home/pi/ros2_ws/install/realsense2_ros_mqtt_bridge/share/ament_index/resource_index
+[8.139s] creating /home/pi/ros2_ws/install/realsense2_ros_mqtt_bridge/share/ament_index/resource_index/packages
+[8.140s] copying resource/realsense2_ros_mqtt_bridge -> /home/pi/ros2_ws/install/realsense2_ros_mqtt_bridge/share/ament_index/resource_index/packages
+[8.143s] copying package.xml -> /home/pi/ros2_ws/install/realsense2_ros_mqtt_bridge/share/realsense2_ros_mqtt_bridge
+[8.157s] creating /home/pi/ros2_ws/install/realsense2_ros_mqtt_bridge/share/realsense2_ros_mqtt_bridge/launch
+[8.157s] copying launch/rs_launch.py -> /home/pi/ros2_ws/install/realsense2_ros_mqtt_bridge/share/realsense2_ros_mqtt_bridge/launch
+[8.158s] running install_egg_info
+[8.161s] Copying ../../../build/realsense2_ros_mqtt_bridge/realsense2_ros_mqtt_bridge.egg-info to /home/pi/ros2_ws/install/realsense2_ros_mqtt_bridge/lib/python3.10/site-packages/realsense2_ros_mqtt_bridge-4.57.0-py3.10.egg-info
+[8.173s] running install_scripts
+[8.279s] Installing realsense2_ros_mqtt_bridge script to /home/pi/ros2_ws/install/realsense2_ros_mqtt_bridge/lib/realsense2_ros_mqtt_bridge
+[8.285s] writing list of installed files to '/home/pi/ros2_ws/build/realsense2_ros_mqtt_bridge/install.log'
+[8.541s] Invoked command in '/home/pi/ros2_ws/src/realsense-ros/realsense2_ros_mqtt_bridge' returned '0': PYTHONPATH=/home/pi/ros2_ws/build/realsense2_ros_mqtt_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pi/ros2_ws/install/realsense2_ros_mqtt_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/realsense2_ros_mqtt_bridge build --build-base /home/pi/ros2_ws/build/realsense2_ros_mqtt_bridge/build install --record /home/pi/ros2_ws/build/realsense2_ros_mqtt_bridge/install.log --single-version-externally-managed install_data

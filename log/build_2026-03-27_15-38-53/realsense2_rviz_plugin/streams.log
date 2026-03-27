@@ -1,0 +1,41 @@
+[0.163s] Invoking command in '/home/pi/ros2_ws/build/realsense2_rviz_plugin': AMENT_PREFIX_PATH=/home/pi/ros2_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/pi/ros2_ws/install/realsense2_camera_msgs:/home/pi/ros2_ws/install/turtlesim:/home/pi/ros2_ws/install/rplidar_ros:/home/pi/ros2_ws/install/robo_rover:/home/pi/ros2_ws/install/ack_control:/home/pi/ros2_ws/install/py_Controller:/home/pi/ros2_ws/install/green_vision:/home/pi/ros2_ws/install/green_control:/opt/ros/humble LD_LIBRARY_PATH=/home/pi/ros2_ws/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/pi/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/pi/ros2_ws/src/realsense-ros/realsense2_rgbd_plugin -DCMAKE_INSTALL_PREFIX=/home/pi/ros2_ws/install/realsense2_rviz_plugin
+[0.676s] -- The C compiler identification is GNU 11.4.0
+[1.106s] -- The CXX compiler identification is GNU 11.4.0
+[1.140s] -- Detecting C compiler ABI info
+[1.569s] -- Detecting C compiler ABI info - done
+[1.595s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.596s] -- Detecting C compile features
+[1.597s] -- Detecting C compile features - done
+[1.612s] -- Detecting CXX compiler ABI info
+[2.188s] -- Detecting CXX compiler ABI info - done
+[2.214s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.215s] -- Detecting CXX compile features
+[2.217s] -- Detecting CXX compile features - done
+[2.257s] -- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.368s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[4.242s] -- RVIZ_RGBD_PLUGIN is DISABLED: Plugin will not be built.
+[4.641s] -- Configuring done
+[4.662s] -- Generating done
+[4.671s] -- Build files have been written to: /home/pi/ros2_ws/build/realsense2_rviz_plugin
+[4.699s] Invoked command in '/home/pi/ros2_ws/build/realsense2_rviz_plugin' returned '0': AMENT_PREFIX_PATH=/home/pi/ros2_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/pi/ros2_ws/install/realsense2_camera_msgs:/home/pi/ros2_ws/install/turtlesim:/home/pi/ros2_ws/install/rplidar_ros:/home/pi/ros2_ws/install/robo_rover:/home/pi/ros2_ws/install/ack_control:/home/pi/ros2_ws/install/py_Controller:/home/pi/ros2_ws/install/green_vision:/home/pi/ros2_ws/install/green_control:/opt/ros/humble LD_LIBRARY_PATH=/home/pi/ros2_ws/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/pi/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/pi/ros2_ws/src/realsense-ros/realsense2_rgbd_plugin -DCMAKE_INSTALL_PREFIX=/home/pi/ros2_ws/install/realsense2_rviz_plugin
+[4.708s] Invoking command in '/home/pi/ros2_ws/build/realsense2_rviz_plugin': AMENT_PREFIX_PATH=/home/pi/ros2_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/pi/ros2_ws/install/realsense2_camera_msgs:/home/pi/ros2_ws/install/turtlesim:/home/pi/ros2_ws/install/rplidar_ros:/home/pi/ros2_ws/install/robo_rover:/home/pi/ros2_ws/install/ack_control:/home/pi/ros2_ws/install/py_Controller:/home/pi/ros2_ws/install/green_vision:/home/pi/ros2_ws/install/green_control:/opt/ros/humble LD_LIBRARY_PATH=/home/pi/ros2_ws/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/pi/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/pi/ros2_ws/build/realsense2_rviz_plugin -- -j4 -l4
+[4.882s] Invoked command in '/home/pi/ros2_ws/build/realsense2_rviz_plugin' returned '0': AMENT_PREFIX_PATH=/home/pi/ros2_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/pi/ros2_ws/install/realsense2_camera_msgs:/home/pi/ros2_ws/install/turtlesim:/home/pi/ros2_ws/install/rplidar_ros:/home/pi/ros2_ws/install/robo_rover:/home/pi/ros2_ws/install/ack_control:/home/pi/ros2_ws/install/py_Controller:/home/pi/ros2_ws/install/green_vision:/home/pi/ros2_ws/install/green_control:/opt/ros/humble LD_LIBRARY_PATH=/home/pi/ros2_ws/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/pi/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/pi/ros2_ws/build/realsense2_rviz_plugin -- -j4 -l4
+[4.892s] Invoking command in '/home/pi/ros2_ws/build/realsense2_rviz_plugin': AMENT_PREFIX_PATH=/home/pi/ros2_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/pi/ros2_ws/install/realsense2_camera_msgs:/home/pi/ros2_ws/install/turtlesim:/home/pi/ros2_ws/install/rplidar_ros:/home/pi/ros2_ws/install/robo_rover:/home/pi/ros2_ws/install/ack_control:/home/pi/ros2_ws/install/py_Controller:/home/pi/ros2_ws/install/green_vision:/home/pi/ros2_ws/install/green_control:/opt/ros/humble LD_LIBRARY_PATH=/home/pi/ros2_ws/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/pi/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/pi/ros2_ws/build/realsense2_rviz_plugin
+[4.929s] -- Install configuration: ""
+[4.929s] -- Installing: /home/pi/ros2_ws/install/realsense2_rviz_plugin/share/realsense2_rviz_plugin/config/rviz_rgbd_plugin_settings.yaml
+[4.931s] -- Installing: /home/pi/ros2_ws/install/realsense2_rviz_plugin/share/ament_index/resource_index/package_run_dependencies/realsense2_rviz_plugin
+[4.934s] -- Installing: /home/pi/ros2_ws/install/realsense2_rviz_plugin/share/ament_index/resource_index/parent_prefix_path/realsense2_rviz_plugin
+[4.936s] -- Installing: /home/pi/ros2_ws/install/realsense2_rviz_plugin/share/realsense2_rviz_plugin/environment/ament_prefix_path.sh
+[4.938s] -- Installing: /home/pi/ros2_ws/install/realsense2_rviz_plugin/share/realsense2_rviz_plugin/environment/ament_prefix_path.dsv
+[4.940s] -- Installing: /home/pi/ros2_ws/install/realsense2_rviz_plugin/share/realsense2_rviz_plugin/environment/path.sh
+[4.942s] -- Installing: /home/pi/ros2_ws/install/realsense2_rviz_plugin/share/realsense2_rviz_plugin/environment/path.dsv
+[4.944s] -- Installing: /home/pi/ros2_ws/install/realsense2_rviz_plugin/share/realsense2_rviz_plugin/local_setup.bash
+[4.948s] -- Installing: /home/pi/ros2_ws/install/realsense2_rviz_plugin/share/realsense2_rviz_plugin/local_setup.sh
+[4.952s] -- Installing: /home/pi/ros2_ws/install/realsense2_rviz_plugin/share/realsense2_rviz_plugin/local_setup.zsh
+[4.960s] -- Installing: /home/pi/ros2_ws/install/realsense2_rviz_plugin/share/realsense2_rviz_plugin/local_setup.dsv
+[4.961s] -- Installing: /home/pi/ros2_ws/install/realsense2_rviz_plugin/share/realsense2_rviz_plugin/package.dsv
+[4.974s] -- Installing: /home/pi/ros2_ws/install/realsense2_rviz_plugin/share/ament_index/resource_index/packages/realsense2_rviz_plugin
+[4.974s] -- Installing: /home/pi/ros2_ws/install/realsense2_rviz_plugin/share/realsense2_rviz_plugin/cmake/realsense2_rviz_pluginConfig.cmake
+[4.975s] -- Installing: /home/pi/ros2_ws/install/realsense2_rviz_plugin/share/realsense2_rviz_plugin/cmake/realsense2_rviz_pluginConfig-version.cmake
+[4.976s] -- Installing: /home/pi/ros2_ws/install/realsense2_rviz_plugin/share/realsense2_rviz_plugin/package.xml
+[4.977s] Invoked command in '/home/pi/ros2_ws/build/realsense2_rviz_plugin' returned '0': AMENT_PREFIX_PATH=/home/pi/ros2_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/pi/ros2_ws/install/realsense2_camera_msgs:/home/pi/ros2_ws/install/turtlesim:/home/pi/ros2_ws/install/rplidar_ros:/home/pi/ros2_ws/install/robo_rover:/home/pi/ros2_ws/install/ack_control:/home/pi/ros2_ws/install/py_Controller:/home/pi/ros2_ws/install/green_vision:/home/pi/ros2_ws/install/green_control:/opt/ros/humble LD_LIBRARY_PATH=/home/pi/ros2_ws/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/pi/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/pi/ros2_ws/build/realsense2_rviz_plugin
