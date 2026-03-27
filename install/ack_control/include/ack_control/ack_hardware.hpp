@@ -1,1 +1,0 @@
-/home/pi/ros2_ws/src/ack_control/include/ack_control/ack_hardware.hpp

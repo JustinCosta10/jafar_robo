@@ -1,1 +1,0 @@
-/home/pi/ros2_ws/src/robo_rover/robo_rover/rover_node.py
