@@ -39,15 +39,23 @@ class DepthNode(Node):
 
         dist_msg = Float32()
         dist_msg.data = dist_to_front_obstacle
+        self.get_logger().info(
+            f"[depth_node] Distance to front obstacle: {dist_to_front_obstacle:.2f} m"
+        )
         self.obstacle_dist_pub.publish(dist_msg)
 
 
 def main(args=None):
     rclpy.init(args=args)
     node = DepthNode()
-    rclpy.spin(node)
-    node.destroy_node()
-    rclpy.shutdown()
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        node.destroy_node()
+        rclpy.shutdown()
+
 
 
 if __name__ == "__main__":

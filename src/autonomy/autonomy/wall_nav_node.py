@@ -35,8 +35,12 @@ class WallNavNode(Node):
         drive_cmd = Twist()
 
         if dist_to_front_obstacle > 1.0:
+            self.get_logger().info("Path is clear. Moving forward at 0.5 m/s.")
             drive_cmd.linear.x = 0.5
         else:
+            self.get_logger().warn(
+                f"Obstacle detected at {dist_to_front_obstacle:.2f} m. Stopping."
+            )
             drive_cmd.linear.x = 0.0
 
         self.cmd_pub.publish(drive_cmd)
@@ -45,9 +49,13 @@ class WallNavNode(Node):
 def main(args=None):
     rclpy.init(args=args)
     node = WallNavNode()
-    rclpy.spin(node)
-    node.destroy_node()
-    rclpy.shutdown()
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        node.destroy_node()
+        rclpy.shutdown()
 
 
 if __name__ == "__main__":
