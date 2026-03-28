@@ -131,8 +131,18 @@ class RsStreamNode(Node):
                 self.restart_pipeline()
 
     def destroy_node(self):
+        self.get_logger().info("Shutting down RealSense pipeline...")
+        try:
+            self.timer.cancel()
+        except Exception:
+            pass
         try:
             self.pipe.stop()
+        except Exception:
+            pass
+        try:
+            del self.align
+            del self.pipe
         except Exception:
             pass
         super().destroy_node()
