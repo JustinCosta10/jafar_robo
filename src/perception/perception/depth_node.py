@@ -4,6 +4,7 @@ RPLIDAR depth perception for autonomous detection of wall
 sub to LIDAR sensor /scan topic -> publish distance from wall
 """
 
+import math
 import yaml
 import rclpy
 from rclpy.node import Node
@@ -34,8 +35,14 @@ class DepthNode(Node):
         )
 
     def depth_callback(self, msg):
-        dist_to_front_obstacle = msg.ranges[0]  # angle 0º => directly in front of rover
-        # TODO may need to change if lidar is mounted backwards? (to 180 degs)
+        # Average over a small window around 0° (index 90) for robustness
+        center = 90
+        half_window = 5
+        readings = [
+            r for r in msg.ranges[center - half_window : center + half_window + 1]
+            if math.isfinite(r)
+        ]
+        dist_to_front_obstacle = sum(readings) / len(readings) if readings else float("inf")
 
         dist_msg = Float32()
         dist_msg.data = dist_to_front_obstacle
