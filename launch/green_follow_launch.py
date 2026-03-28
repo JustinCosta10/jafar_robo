@@ -6,7 +6,7 @@ Launches: rs_stream -> green_vision -> green_control -> rover_node
 """
 
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument
+from launch.actions import DeclareLaunchArgument, TimerAction
 from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
 
@@ -30,12 +30,17 @@ def generate_launch_description():
         ),
 
         # --- Nodes ---
-        # RealSense camera stream (aligned depth + color + camera_info)
-        Node(
-            package="rs_stream",
-            executable="rs_stream_node",
-            name="rs_stream_node",
-            output="screen",
+        # RealSense camera stream (delayed 15s to let rover arm first)
+        TimerAction(
+            period=15.0,
+            actions=[
+                Node(
+                    package="rs_stream",
+                    executable="rs_stream_node",
+                    name="rs_stream_node",
+                    output="screen",
+                ),
+            ],
         ),
 
         # Green paper detection
