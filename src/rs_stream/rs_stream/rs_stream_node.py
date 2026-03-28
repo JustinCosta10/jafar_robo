@@ -6,7 +6,9 @@ RealSense stream node — publishes aligned color and depth images.
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image, CameraInfo
+from std_msgs.msg import Bool
 from cv_bridge import CvBridge
+from rclpy.qos import QoSProfile, DurabilityPolicy
 import pyrealsense2 as rs
 import numpy as np
 
@@ -22,6 +24,10 @@ class RsStreamNode(Node):
         self.depth_pub = self.create_publisher(Image, "/camera/depth/image_raw", 10)
         self.color_info_pub = self.create_publisher(CameraInfo, "/camera/color/camera_info", 10)
 
+        # Ready signal (transient_local so late subscribers receive it)
+        latched_qos = QoSProfile(depth=1, durability=DurabilityPolicy.TRANSIENT_LOCAL)
+        self.ready_pub = self.create_publisher(Bool, "/camera/ready", latched_qos)
+
         # RealSense pipeline with alignment
         self.pipe = rs.pipeline()
         cfg = rs.config()
@@ -29,6 +35,8 @@ class RsStreamNode(Node):
         cfg.enable_stream(rs.stream.depth, width, height, rs.format.z16, fps)
         self.get_logger().info("Starting RealSense pipeline...")
         profile = self.pipe.start(cfg)
+        self.get_logger().info("RealSense pipeline started.")
+        self.ready_pub.publish(Bool(data=True))
 
         self.align = rs.align(rs.stream.color)
 
