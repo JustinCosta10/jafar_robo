@@ -3,8 +3,8 @@ paper_config:
   paper_height: 11.0 # inches
   rgb: [ 57, 255, 20 ]
   hsv: [ 111, 92, 100 ] # degrees, %, %
-  lower_hsv: [ 80, 70, 75 ] # TODO tune these bounds
-  upper_hsv: [ 130, 100, 100 ]
+  lower_hsv: [ 45, 100, 120 ] # TODO tune these bounds
+  upper_hsv: [ 75, 255, 255 ]
 
 /rgb_node:
   ros__parameters:
