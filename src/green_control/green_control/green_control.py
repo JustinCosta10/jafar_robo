@@ -17,8 +17,8 @@ class GreenControlNode(Node):
         self.timer = self.create_timer(0.1, self.control_loop)
 
         # Control parameters
-        self.steering_kp = 4.0       # proportional gain for steering
-        self.drive_speed = 0.7       # fixed forward speed (m/s)
+        self.steering_kp = 5.0       # proportional gain for steering
+        self.drive_speed = 0.5       # fixed forward speed (m/s)
         self.stop_distance = 0.25    # stop when closer than this (m)
         self.goal_timeout = 1.0      # stop if no goal received for this long (s)
 
