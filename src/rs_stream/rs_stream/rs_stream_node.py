@@ -5,7 +5,7 @@ RealSense stream node — publishes aligned color and depth images.
 
 import rclpy
 from rclpy.node import Node
-from sensor_msgs.msg import Image
+from sensor_msgs.msg import Image, CameraInfo
 from cv_bridge import CvBridge
 import pyrealsense2 as rs
 import numpy as np
@@ -20,6 +20,7 @@ class RsStreamNode(Node):
         # Publishers
         self.color_pub = self.create_publisher(Image, "/camera/color/image_raw", 10)
         self.depth_pub = self.create_publisher(Image, "/camera/depth/image_raw", 10)
+        self.color_info_pub = self.create_publisher(CameraInfo, "/camera/color/camera_info", 10)
 
         # RealSense pipeline with alignment
         self.pipe = rs.pipeline()
@@ -27,9 +28,30 @@ class RsStreamNode(Node):
         cfg.enable_stream(rs.stream.color, width, height, rs.format.bgr8, fps)
         cfg.enable_stream(rs.stream.depth, width, height, rs.format.z16, fps)
         self.get_logger().info("Starting RealSense pipeline...")
-        self.pipe.start(cfg)
+        profile = self.pipe.start(cfg)
 
         self.align = rs.align(rs.stream.color)
+
+        # Build CameraInfo from color intrinsics
+        color_profile = profile.get_stream(rs.stream.color).as_video_stream_profile()
+        intr = color_profile.get_intrinsics()
+        self.color_info_msg = CameraInfo()
+        self.color_info_msg.header.frame_id = "camera_color_optical_frame"
+        self.color_info_msg.width = intr.width
+        self.color_info_msg.height = intr.height
+        self.color_info_msg.distortion_model = "plumb_bob"
+        self.color_info_msg.d = [float(c) for c in intr.coeffs]
+        self.color_info_msg.k = [
+            intr.fx, 0.0, intr.ppx,
+            0.0, intr.fy, intr.ppy,
+            0.0, 0.0, 1.0,
+        ]
+        self.color_info_msg.r = [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+        self.color_info_msg.p = [
+            intr.fx, 0.0, intr.ppx, 0.0,
+            0.0, intr.fy, intr.ppy, 0.0,
+            0.0, 0.0, 1.0, 0.0,
+        ]
 
         self.timer = self.create_timer(1.0 / fps, self.capture_and_publish)
 
@@ -49,6 +71,9 @@ class RsStreamNode(Node):
                 color_msg.header.stamp = stamp
                 color_msg.header.frame_id = "camera_color_optical_frame"
                 self.color_pub.publish(color_msg)
+
+                self.color_info_msg.header.stamp = stamp
+                self.color_info_pub.publish(self.color_info_msg)
 
             if depth_frame:
                 depth_img = np.asanyarray(depth_frame.get_data())

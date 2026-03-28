@@ -2,33 +2,19 @@
 """
 Launch file for green paper following behavior.
 
-Launches: realsense camera -> green_vision -> green_control -> rover_node
+Launches: rs_stream -> green_vision -> green_control -> rover_node
 """
 
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription
-from launch.launch_description_sources import PythonLaunchDescriptionSource
+from launch.actions import DeclareLaunchArgument
 from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
-from ament_index_python.packages import get_package_share_directory
-import os
 
 
 def generate_launch_description():
     # Rover args
     connection_string = LaunchConfiguration("connection_string", default="/dev/ttyACM1")
     baud_rate = LaunchConfiguration("baud_rate", default="115200")
-
-    # RealSense camera launch
-    realsense_share = get_package_share_directory("realsense2_camera")
-    realsense_launch = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(
-            os.path.join(realsense_share, "launch", "rs_launch.py")
-        ),
-        launch_arguments={
-            "pointcloud.enable": "false",
-        }.items(),
-    )
 
     return LaunchDescription([
         # --- Launch arguments ---
@@ -44,8 +30,13 @@ def generate_launch_description():
         ),
 
         # --- Nodes ---
-        # RealSense D435 camera
-        realsense_launch,
+        # RealSense camera stream (aligned depth + color + camera_info)
+        Node(
+            package="rs_stream",
+            executable="rs_stream_node",
+            name="rs_stream_node",
+            output="screen",
+        ),
 
         # Green paper detection
         Node(
