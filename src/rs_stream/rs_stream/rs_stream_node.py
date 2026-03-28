@@ -55,34 +55,8 @@ class RsStreamNode(Node):
 
         self.warmup_frames = 30
         self.warmup_count = 0
-        self.consecutive_errors = 0
-        self.max_consecutive_errors = 3
-        self.fps = fps
-        self.width = width
-        self.height = height
 
         self.timer = self.create_timer(1.0 / fps, self.capture_and_publish)
-
-    def restart_pipeline(self):
-        """Stop and restart the RealSense pipeline with a fresh pipeline object."""
-        self.get_logger().warn("Restarting RealSense pipeline...")
-        try:
-            self.pipe.stop()
-        except Exception:
-            pass
-        try:
-            self.pipe = rs.pipeline()
-            cfg = rs.config()
-            cfg.enable_stream(rs.stream.color, self.width, self.height, rs.format.bgr8, self.fps)
-            cfg.enable_stream(rs.stream.depth, self.width, self.height, rs.format.z16, self.fps)
-            self.pipe.start(cfg)
-            self.align = rs.align(rs.stream.color)
-            self.warmup_count = 0
-            self.consecutive_errors = 0
-            self.get_logger().info("RealSense pipeline restarted.")
-        except Exception as e:
-            self.get_logger().error(f"Restart failed: {e}, will retry next cycle.")
-            self.consecutive_errors = 0
 
     def capture_and_publish(self):
         try:
@@ -101,7 +75,6 @@ class RsStreamNode(Node):
                 return
 
             aligned = self.align.process(frames)
-            self.consecutive_errors = 0
             color_frame = aligned.get_color_frame()
             depth_frame = aligned.get_depth_frame()
 
@@ -125,10 +98,7 @@ class RsStreamNode(Node):
                 self.depth_pub.publish(depth_msg)
 
         except Exception as e:
-            self.consecutive_errors += 1
-            self.get_logger().warn(f"Frame skip ({self.consecutive_errors}): {e}")
-            if self.consecutive_errors >= self.max_consecutive_errors:
-                self.restart_pipeline()
+            self.get_logger().warn(f"Frame skip: {e}")
 
     def destroy_node(self):
         self.get_logger().info("Shutting down RealSense pipeline...")
