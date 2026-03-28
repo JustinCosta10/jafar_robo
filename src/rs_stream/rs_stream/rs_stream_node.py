@@ -17,16 +17,10 @@ class RsStreamNode(Node):
 
         self.bridge = CvBridge()
 
-        # Best-effort QoS to reduce overhead
-        qos = rclpy.qos.QoSProfile(
-            depth=2,
-            reliability=rclpy.qos.ReliabilityPolicy.BEST_EFFORT,
-        )
-
         # Publishers
-        self.color_pub = self.create_publisher(Image, "/camera/color/image_raw", qos)
-        self.depth_pub = self.create_publisher(Image, "/camera/depth/image_raw", qos)
-        self.color_info_pub = self.create_publisher(CameraInfo, "/camera/color/camera_info", qos)
+        self.color_pub = self.create_publisher(Image, "/camera/color/image_raw", 2)
+        self.depth_pub = self.create_publisher(Image, "/camera/depth/image_raw", 2)
+        self.color_info_pub = self.create_publisher(CameraInfo, "/camera/color/camera_info", 2)
 
         # RealSense pipeline with alignment
         self.pipe = rs.pipeline()
