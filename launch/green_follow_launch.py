@@ -30,7 +30,7 @@ def generate_launch_description():
         ),
 
         # --- Nodes ---
-        # RealSense camera stream (self-healing: warmup + auto-restart)
+        # RealSense camera stream (aligned depth + color + camera_info)
         Node(
             package="rs_stream",
             executable="rs_stream_node",
