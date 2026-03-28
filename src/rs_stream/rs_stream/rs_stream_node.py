@@ -58,8 +58,13 @@ class RsStreamNode(Node):
     def capture_and_publish(self):
         try:
             frames = self.pipe.wait_for_frames(timeout_ms=1000)
-            aligned = self.align.process(frames)
 
+            color_frame = frames.get_color_frame()
+            depth_frame = frames.get_depth_frame()
+            if not color_frame or not depth_frame:
+                return
+
+            aligned = self.align.process(frames)
             color_frame = aligned.get_color_frame()
             depth_frame = aligned.get_depth_frame()
 
