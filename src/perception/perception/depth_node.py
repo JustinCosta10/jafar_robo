@@ -36,7 +36,7 @@ class DepthNode(Node):
 
     def depth_callback(self, msg):
         # Average over a small window around 0° (index 90) for robustness
-        center = 90
+        center = 360
         half_window = 5
         readings = [
             r for r in msg.ranges[center - half_window : center + half_window + 1]

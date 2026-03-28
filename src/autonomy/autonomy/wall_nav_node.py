@@ -34,9 +34,9 @@ class WallNavNode(Node):
         dist_to_front_obstacle = msg.data
         drive_cmd = Twist()
 
-        if dist_to_front_obstacle > 1.0:
-            self.get_logger().info("Path is clear. Moving forward at 0.5 m/s.")
-            drive_cmd.linear.x = 0.5
+        if dist_to_front_obstacle > 1.4:
+            self.get_logger().info("Path is clear. Moving forward at 0.4 m/s.")
+            drive_cmd.linear.x = 0.4
         else:
             self.get_logger().warn(
                 f"Obstacle detected at {dist_to_front_obstacle:.2f} m. Stopping."
