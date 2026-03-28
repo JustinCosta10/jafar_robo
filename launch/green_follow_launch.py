@@ -30,9 +30,9 @@ def generate_launch_description():
         ),
 
         # --- Nodes ---
-        # RealSense camera stream (delayed 15s to let rover arm first)
+        # RealSense camera stream (delayed 30s to let rover arm first)
         TimerAction(
-            period=15.0,
+            period=30.0,
             actions=[
                 Node(
                     package="rs_stream",
