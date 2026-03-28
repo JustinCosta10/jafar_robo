@@ -12,15 +12,21 @@ import numpy as np
 
 
 class RsStreamNode(Node):
-    def __init__(self, width=640, height=480, fps=30):
+    def __init__(self, width=424, height=240, fps=15):
         super().__init__("rs_stream_node")
 
         self.bridge = CvBridge()
 
+        # Best-effort QoS to reduce overhead
+        qos = rclpy.qos.QoSProfile(
+            depth=2,
+            reliability=rclpy.qos.ReliabilityPolicy.BEST_EFFORT,
+        )
+
         # Publishers
-        self.color_pub = self.create_publisher(Image, "/camera/color/image_raw", 10)
-        self.depth_pub = self.create_publisher(Image, "/camera/depth/image_raw", 10)
-        self.color_info_pub = self.create_publisher(CameraInfo, "/camera/color/camera_info", 10)
+        self.color_pub = self.create_publisher(Image, "/camera/color/image_raw", qos)
+        self.depth_pub = self.create_publisher(Image, "/camera/depth/image_raw", qos)
+        self.color_info_pub = self.create_publisher(CameraInfo, "/camera/color/camera_info", qos)
 
         # RealSense pipeline with alignment
         self.pipe = rs.pipeline()

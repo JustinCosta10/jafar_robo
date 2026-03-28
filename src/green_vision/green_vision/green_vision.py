@@ -1,6 +1,7 @@
 import yaml
 import rclpy
 from rclpy.node import Node
+from rclpy.qos import QoSProfile, ReliabilityPolicy
 import cv2
 import numpy as np
 import os
@@ -63,14 +64,18 @@ class GreenVisionNode(Node):
         self.point_pub = self.create_publisher(PointStamped, "goal_point", 10)
 
     def _setup_subscribers(self):
+        sensor_qos = QoSProfile(
+            depth=1,
+            reliability=ReliabilityPolicy.BEST_EFFORT,
+        )
         self.image_sub = self.create_subscription(
-            Image, "/camera/color/image_raw", self.image_callback, 1
+            Image, "/camera/color/image_raw", self.image_callback, sensor_qos
         )
         self.depth_sub = self.create_subscription(
-            Image, "/camera/depth/image_raw", self.depth_callback, 1
+            Image, "/camera/depth/image_raw", self.depth_callback, sensor_qos
         )
         self.color_info_sub = self.create_subscription(
-            CameraInfo, "/camera/color/camera_info", self.color_info_callback, 10
+            CameraInfo, "/camera/color/camera_info", self.color_info_callback, sensor_qos
         )
 
     def color_info_callback(self, msg):
