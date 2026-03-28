@@ -64,7 +64,7 @@ class RsStreamNode(Node):
         self.warmup_frames = 30
         self.warmup_count = 0
         self.consecutive_errors = 0
-        self.max_consecutive_errors = 10
+        self.max_consecutive_errors = 3
         self.fps = fps
         self.width = width
         self.height = height
