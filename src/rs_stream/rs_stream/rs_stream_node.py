@@ -12,7 +12,7 @@ import numpy as np
 
 
 class RsStreamNode(Node):
-    def __init__(self, width=424, height=240, fps=15):
+    def __init__(self, width=640, height=480, fps=15):
         super().__init__("rs_stream_node")
 
         self.bridge = CvBridge()
