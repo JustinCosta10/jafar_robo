@@ -11,6 +11,8 @@ from cv_bridge import CvBridge
 from rclpy.qos import QoSProfile, DurabilityPolicy
 import pyrealsense2 as rs
 import numpy as np
+import subprocess
+import time
 
 
 class RsStreamNode(Node):
@@ -71,6 +73,29 @@ class RsStreamNode(Node):
 
         self.timer = self.create_timer(1.0 / fps, self.capture_and_publish)
 
+    def usb_reset_realsense(self):
+        """Reset the RealSense USB device at the kernel level."""
+        try:
+            result = subprocess.run(
+                ["lsusb"], capture_output=True, text=True
+            )
+            for line in result.stdout.splitlines():
+                if "8086:" in line:  # Intel vendor ID
+                    parts = line.split()
+                    bus = parts[1]
+                    dev = parts[3].rstrip(":")
+                    devpath = f"/dev/bus/usb/{bus}/{dev}"
+                    self.get_logger().warn(f"USB reset: {devpath}")
+                    subprocess.run(
+                        ["usbreset", devpath],
+                        capture_output=True, timeout=5
+                    )
+                    time.sleep(2)
+                    return True
+        except Exception as e:
+            self.get_logger().error(f"USB reset failed: {e}")
+        return False
+
     def restart_pipeline(self):
         """Stop and restart the RealSense pipeline with a fresh pipeline object."""
         self.get_logger().warn("Restarting RealSense pipeline...")
@@ -78,6 +103,10 @@ class RsStreamNode(Node):
             self.pipe.stop()
         except Exception:
             pass
+
+        # USB reset to recover from device-level errors
+        self.usb_reset_realsense()
+
         try:
             self.pipe = rs.pipeline()
             cfg = rs.config()
