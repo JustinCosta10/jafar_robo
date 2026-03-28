@@ -54,9 +54,9 @@ def generate_launch_description():
             output="screen",
         ),
 
-        # Rover driver (delayed 10s to let RealSense finish USB enumeration)
+        # Rover driver (delayed 20s to let RealSense finish USB enumeration)
         TimerAction(
-            period=10.0,
+            period=20.0,
             actions=[
                 Node(
                     package="robo_rover",
