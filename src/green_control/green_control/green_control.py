@@ -18,8 +18,10 @@ class GreenControlNode(Node):
 
         # Control parameters
         self.steering_kp = 1.5       # proportional gain for steering
-        self.forward_speed = 0.4     # base forward speed (m/s)
+        self.max_speed = 0.25        # max forward speed (m/s)
+        self.min_speed = 0.08        # min forward speed when close (m/s)
         self.stop_distance = 0.25    # stop when closer than this (m)
+        self.full_speed_distance = 2.0  # distance at which max speed is reached (m)
         self.goal_timeout = 1.0      # stop if no goal received for this long (s)
 
         self.get_logger().info("Green Control Node has started!")
@@ -60,7 +62,11 @@ class GreenControlNode(Node):
         # Proportional steering: steer toward the target (negative x = turn left)
         steer = -self.steering_kp * x
         cmd.angular.z = max(-1.0, min(1.0, steer))
-        cmd.linear.x = self.forward_speed
+
+        # Scale speed linearly with distance: slow near target, faster when far
+        t = (z - self.stop_distance) / (self.full_speed_distance - self.stop_distance)
+        t = max(0.0, min(1.0, t))
+        cmd.linear.x = self.min_speed + t * (self.max_speed - self.min_speed)
 
         self.publisher_.publish(cmd)
         self.get_logger().debug(
