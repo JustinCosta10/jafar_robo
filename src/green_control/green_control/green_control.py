@@ -60,7 +60,7 @@ class GreenControlNode(Node):
             return
 
         # Proportional steering: steer toward the target (negative x = turn left)
-        steer = -self.steering_kp * x
+        steer = self.steering_kp * x
         cmd.angular.z = max(-1.0, min(1.0, steer))
 
         # Scale speed linearly with distance: slow near target, faster when far
