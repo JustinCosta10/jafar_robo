@@ -21,6 +21,12 @@ jafar_robo
 **Run LIDaR:**
 `ros2 launch rplidar_ros rplidar_a1_launch.py`
 
+**Launch Wall Stop (all nodes):**
+`ros2 launch launch/wall_stop_launch.py`
+
+With custom serial ports:
+`ros2 launch launch/wall_stop_launch.py serial_port:=/dev/ttyUSB1 connection_string:=/dev/ttyACM0`
+
 ## Packages Used
 
 1. `ROBO_rover`: integrated control and IMU data publishing for a Pixhawk 4 Mini running ArduPilot Rover firmware.
