@@ -72,20 +72,25 @@ class RsStreamNode(Node):
         self.timer = self.create_timer(1.0 / fps, self.capture_and_publish)
 
     def restart_pipeline(self):
-        """Stop and restart the RealSense pipeline."""
+        """Stop and restart the RealSense pipeline with a fresh pipeline object."""
         self.get_logger().warn("Restarting RealSense pipeline...")
         try:
             self.pipe.stop()
         except Exception:
             pass
-        cfg = rs.config()
-        cfg.enable_stream(rs.stream.color, self.width, self.height, rs.format.bgr8, self.fps)
-        cfg.enable_stream(rs.stream.depth, self.width, self.height, rs.format.z16, self.fps)
-        self.pipe.start(cfg)
-        self.align = rs.align(rs.stream.color)
-        self.warmup_count = 0
-        self.consecutive_errors = 0
-        self.get_logger().info("RealSense pipeline restarted.")
+        try:
+            self.pipe = rs.pipeline()
+            cfg = rs.config()
+            cfg.enable_stream(rs.stream.color, self.width, self.height, rs.format.bgr8, self.fps)
+            cfg.enable_stream(rs.stream.depth, self.width, self.height, rs.format.z16, self.fps)
+            self.pipe.start(cfg)
+            self.align = rs.align(rs.stream.color)
+            self.warmup_count = 0
+            self.consecutive_errors = 0
+            self.get_logger().info("RealSense pipeline restarted.")
+        except Exception as e:
+            self.get_logger().error(f"Restart failed: {e}, will retry next cycle.")
+            self.consecutive_errors = 0
 
     def capture_and_publish(self):
         try:
