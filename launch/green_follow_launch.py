@@ -30,17 +30,12 @@ def generate_launch_description():
         ),
 
         # --- Nodes ---
-        # RealSense camera stream (delayed 30s to let rover arm first)
-        TimerAction(
-            period=30.0,
-            actions=[
-                Node(
-                    package="rs_stream",
-                    executable="rs_stream_node",
-                    name="rs_stream_node",
-                    output="screen",
-                ),
-            ],
+        # RealSense camera stream (starts first to init USB before rover traffic)
+        Node(
+            package="rs_stream",
+            executable="rs_stream_node",
+            name="rs_stream_node",
+            output="screen",
         ),
 
         # Green paper detection
@@ -59,18 +54,23 @@ def generate_launch_description():
             output="screen",
         ),
 
-        # Rover driver
-        Node(
-            package="robo_rover",
-            executable="rover_node",
-            name="rover_node",
-            output="screen",
-            emulate_tty=True,
-            parameters=[{
-                "connection_string": connection_string,
-                "baud_rate": baud_rate,
-                "control_frequency": 20.0,
-                "imu_frequency": 20.0,
-            }],
+        # Rover driver (delayed 10s to let RealSense finish USB enumeration)
+        TimerAction(
+            period=10.0,
+            actions=[
+                Node(
+                    package="robo_rover",
+                    executable="rover_node",
+                    name="rover_node",
+                    output="screen",
+                    emulate_tty=True,
+                    parameters=[{
+                        "connection_string": connection_string,
+                        "baud_rate": baud_rate,
+                        "control_frequency": 20.0,
+                        "imu_frequency": 20.0,
+                    }],
+                ),
+            ],
         ),
     ])
