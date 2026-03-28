@@ -61,7 +61,31 @@ class RsStreamNode(Node):
             0.0, 0.0, 1.0, 0.0,
         ]
 
+        self.warmup_frames = 30
+        self.warmup_count = 0
+        self.consecutive_errors = 0
+        self.max_consecutive_errors = 10
+        self.fps = fps
+        self.width = width
+        self.height = height
+
         self.timer = self.create_timer(1.0 / fps, self.capture_and_publish)
+
+    def restart_pipeline(self):
+        """Stop and restart the RealSense pipeline."""
+        self.get_logger().warn("Restarting RealSense pipeline...")
+        try:
+            self.pipe.stop()
+        except Exception:
+            pass
+        cfg = rs.config()
+        cfg.enable_stream(rs.stream.color, self.width, self.height, rs.format.bgr8, self.fps)
+        cfg.enable_stream(rs.stream.depth, self.width, self.height, rs.format.z16, self.fps)
+        self.pipe.start(cfg)
+        self.align = rs.align(rs.stream.color)
+        self.warmup_count = 0
+        self.consecutive_errors = 0
+        self.get_logger().info("RealSense pipeline restarted.")
 
     def capture_and_publish(self):
         try:
@@ -72,7 +96,15 @@ class RsStreamNode(Node):
             if not color_frame or not depth_frame:
                 return
 
+            # Drop early frames to let depth sensor stabilize
+            if self.warmup_count < self.warmup_frames:
+                self.warmup_count += 1
+                if self.warmup_count == self.warmup_frames:
+                    self.get_logger().info("Warmup complete, starting alignment.")
+                return
+
             aligned = self.align.process(frames)
+            self.consecutive_errors = 0
             color_frame = aligned.get_color_frame()
             depth_frame = aligned.get_depth_frame()
 
@@ -96,7 +128,10 @@ class RsStreamNode(Node):
                 self.depth_pub.publish(depth_msg)
 
         except Exception as e:
-            self.get_logger().warn(f"Frame skip: {e}")
+            self.consecutive_errors += 1
+            self.get_logger().warn(f"Frame skip ({self.consecutive_errors}): {e}")
+            if self.consecutive_errors >= self.max_consecutive_errors:
+                self.restart_pipeline()
 
     def destroy_node(self):
         try:
