@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import time
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
@@ -12,11 +13,31 @@ class RealsenseColorPublisher(Node):
         self.pub = self.create_publisher(Image, '/camera/color/image_raw', 10)
         self.bridge = CvBridge()
 
+        # Hardware-reset the device to release any stale USB handles
+        ctx = rs.context()
+        devices = ctx.query_devices()
+        for dev in devices:
+            self.get_logger().info(f'Hardware-resetting RealSense device: {dev.get_info(rs.camera_info.name)}')
+            dev.hardware_reset()
+        if len(devices) > 0:
+            time.sleep(3)  # wait for device to re-enumerate on USB
+
         self.pipe = rs.pipeline()
         cfg = rs.config()
         cfg.enable_stream(rs.stream.color, width, height, rs.format.bgr8, fps)
-        self.get_logger().info('Starting RealSense pipeline…')
-        self.pipe.start(cfg)
+
+        # Retry pipeline start in case device is still re-enumerating
+        for attempt in range(5):
+            try:
+                self.get_logger().info(f'Starting RealSense pipeline (attempt {attempt + 1}/5)…')
+                self.pipe.start(cfg)
+                break
+            except RuntimeError as e:
+                self.get_logger().warn(f'Pipeline start failed: {e}')
+                if attempt < 4:
+                    time.sleep(2)
+                else:
+                    raise RuntimeError('Failed to start RealSense pipeline after 5 attempts') from e
 
         # timer at ~fps
         self.timer = self.create_timer(1.0 / fps, self.capture_and_publish)
@@ -37,6 +58,7 @@ class RealsenseColorPublisher(Node):
             self.get_logger().warn(f'Frame skip: {e}')
 
     def destroy_node(self):
+        self.timer.cancel()
         try:
             self.pipe.stop()
         except Exception:
